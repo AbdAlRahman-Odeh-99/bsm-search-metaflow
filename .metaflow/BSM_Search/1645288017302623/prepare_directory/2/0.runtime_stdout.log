@@ -1,0 +1,9 @@
+[MFLOG|0|2022-02-19T16:26:59.434165Z|runtime|3cc8d785-df07-4095-bf0f-95e674c12c13]The command is: 
+[MFLOG|0|2022-02-19T16:26:59.551352Z|runtime|ac70130b-3fb0-4d57-aba3-c11d2c6bd017][KILLED BY ORCHESTRATOR]
+[MFLOG|0|2022-02-19T16:26:59.779887Z|runtime|6d59b2af-3246-4669-98ff-5e4838ac615b] 
+[MFLOG|0|2022-02-19T16:26:59.780003Z|runtime|76688a5f-f14d-4ad4-a900-fdc2494218d7]        rm -rf /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search
+[MFLOG|0|2022-02-19T16:26:59.780125Z|runtime|f204358d-5830-49a1-b9ef-425f6d96aaab]        mkdir -p /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search
+[MFLOG|0|2022-02-19T16:26:59.780230Z|runtime|b017041a-c9d8-4d4d-9ed0-5ca94db58aea]        
+[MFLOG|0|2022-02-19T16:26:59.780324Z|runtime|f20f70ff-f17d-4800-95c4-4b1609ffa40c]The output is: 
+[MFLOG|0|2022-02-19T16:26:59.780418Z|runtime|0e1f3828-828c-4107-b604-9e6be594adb5] 
+[MFLOG|0|2022-02-19T16:26:59.780550Z|runtime|55511952-a7d4-43d9-99a0-24d8d56fe13f]Return Code: 0

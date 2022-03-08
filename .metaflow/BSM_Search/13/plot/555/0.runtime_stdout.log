@@ -1,0 +1,96 @@
+[MFLOG|0|2022-02-19T16:54:13.080733Z|runtime|48b82346-698a-4b21-b8b0-9cf43d0aef3b]The command is: 
+[MFLOG|0|2022-02-19T16:54:13.084691Z|runtime|736ccaad-a6ac-45bb-ad0e-d102602b30ea] 
+[MFLOG|0|2022-02-19T16:54:13.088832Z|runtime|5895c9ba-9b4e-4f3b-9689-f89e68ec340b]        set -x
+[MFLOG|0|2022-02-19T16:54:13.090243Z|runtime|0bc300fe-d483-4214-8792-a22b5b550f34]        source /home/abd/root/root/bin/thisroot.sh
+[MFLOG|0|2022-02-19T16:54:13.092225Z|runtime|0f652e61-2119-4791-9398-ddbec6cd0fdf]        hfquickplot write-vardef /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/nominal_vals.yml
+[MFLOG|0|2022-02-19T16:54:13.094098Z|runtime|aa09ff6e-7a07-4cbc-b0de-9cdad9813eb8]        hfquickplot plot-channel /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined channel1 x /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/nominal_vals.yml -c qcd,mc2,mc1,signal -o /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/prefit.pdf
+[MFLOG|0|2022-02-19T16:54:13.098373Z|runtime|1116811c-6465-4d31-9c49-dae7f60a1520]        hfquickplot fit /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/fit_results.yml
+[MFLOG|0|2022-02-19T16:54:13.101038Z|runtime|d40f3142-1df8-45f6-92f4-625482db3b2e]        hfquickplot plot-channel /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined channel1 x /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/fit_results.yml -c qcd,mc2,mc1,signal -o /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/postfit.pdf
+[MFLOG|0|2022-02-19T16:54:13.102201Z|runtime|25963952-623e-474e-94fc-86e8dd182a99]	
+[MFLOG|0|2022-02-19T16:54:13.104870Z|runtime|9659b92a-56be-4641-ac35-067f41dcd442]The output is: 
+[MFLOG|0|2022-02-19T16:54:13.109545Z|runtime|b2f8ff5e-b186-4029-aa2d-70d24b2405d1] 
+[MFLOG|0|2022-02-19T16:54:13.121292Z|runtime|f760a2eb-1c97-4170-a34f-5d4b89098c22]Return Code: 1
+[MFLOG|0|2022-02-19T16:54:13.123318Z|runtime|f7f06d47-ee4b-4b62-9513-d49febedb7a0]The error is: 
+[MFLOG|0|2022-02-19T16:54:13.125299Z|runtime|50e6a001-79b0-4b8f-a880-726220a76bff] + source /home/abd/root/root/bin/thisroot.sh
+[MFLOG|0|2022-02-19T16:54:13.135178Z|runtime|a235e031-80c1-4583-9627-08186715f430]/bin/sh: 3: source: not found
+[MFLOG|0|2022-02-19T16:54:13.138610Z|runtime|4afb6902-ed52-4a79-bf4d-3e2c8d5e693d]+ hfquickplot write-vardef /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/nominal_vals.yml
+[MFLOG|0|2022-02-19T16:54:13.140652Z|runtime|dae770e0-7327-42c5-901f-e8ab5842e362]Error in <TFile::TFile>: file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root does not exist
+[MFLOG|0|2022-02-19T16:54:13.143760Z|runtime|d74f1a68-5384-4858-88fc-c0f1858a125d]Traceback (most recent call last):
+[MFLOG|0|2022-02-19T16:54:13.147812Z|runtime|8a3ceab1-e319-40fc-95c8-c4f82c06052d]  File "/home/abd/.local/bin/hfquickplot", line 8, in <module>
+[MFLOG|0|2022-02-19T16:54:13.150285Z|runtime|0b27e24e-58b3-40f5-acf1-d1db95aff52d]    sys.exit(toplevel())
+[MFLOG|0|2022-02-19T16:54:13.151792Z|runtime|cb0d65d8-8049-44c6-9e37-5a042c0c1dcc]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+[MFLOG|0|2022-02-19T16:54:13.156373Z|runtime|34ffb08e-873b-4421-8932-0edf65d0534e]    return self.main(*args, **kwargs)
+[MFLOG|0|2022-02-19T16:54:13.159693Z|runtime|668d145c-6516-45e6-9a42-15ddd7003215]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 782, in main
+[MFLOG|0|2022-02-19T16:54:13.161347Z|runtime|0b4117ee-0428-4469-9364-f9182991cc25]    rv = self.invoke(ctx)
+[MFLOG|0|2022-02-19T16:54:13.161740Z|runtime|30f2b814-163e-40b7-ba9c-c4ce44517baa]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+[MFLOG|0|2022-02-19T16:54:13.163484Z|runtime|de521f53-2f65-4b8d-80b7-cc1857f9a7ea]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-02-19T16:54:13.163731Z|runtime|ac606b7b-aafd-4313-a16d-478fd093540b]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+[MFLOG|0|2022-02-19T16:54:13.163912Z|runtime|21904044-6864-4fe7-a647-f00ad487fd10]    return ctx.invoke(self.callback, **ctx.params)
+[MFLOG|0|2022-02-19T16:54:13.164073Z|runtime|c48c87c5-cfa4-4d0a-a237-bdca3ce3604f]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+[MFLOG|0|2022-02-19T16:54:13.164232Z|runtime|03fe83ed-f64c-4dd8-85b3-d1fbea1d40a6]    return callback(*args, **kwargs)
+[MFLOG|0|2022-02-19T16:54:13.164377Z|runtime|79a4118d-970f-4372-8f94-ae2b7a58e562]  File "/home/abd/.local/lib/python3.8/site-packages/hftools/plotting/quickplot_cli.py", line 98, in write_vardef
+[MFLOG|0|2022-02-19T16:54:13.164524Z|runtime|e7d7659b-8b72-4cb1-8f8b-664c14ae42bf]    f = ROOT.TFile.Open(rootfile)
+[MFLOG|0|2022-02-19T16:54:13.164672Z|runtime|f7ad98dc-13a6-4077-8d27-bf80e4de06ad]  File "/home/abd/root/root/lib/ROOT/pythonization/_tfile.py", line 67, in _TFileOpen
+[MFLOG|0|2022-02-19T16:54:13.164850Z|runtime|5746e090-341d-446d-aff0-80735c72fe65]    raise OSError('Failed to open file {}'.format(str(args[0])))
+[MFLOG|0|2022-02-19T16:54:13.165003Z|runtime|fc6e0284-719b-420e-9174-ec5c93f6c12d]OSError: Failed to open file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root
+[MFLOG|0|2022-02-19T16:54:13.165159Z|runtime|71e7dd12-7999-4664-b53c-c0aa6dc8bad4]+ hfquickplot plot-channel /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined channel1 x /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/nominal_vals.yml -c qcd,mc2,mc1,signal -o /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/prefit.pdf
+[MFLOG|0|2022-02-19T16:54:13.165296Z|runtime|d5870e1c-edb3-461e-94a5-8ae8d7de122d]Error in <TFile::TFile>: file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root does not exist
+[MFLOG|0|2022-02-19T16:54:13.165420Z|runtime|61274e4b-9a3b-4dbf-80f7-d9c0efc46f36]Traceback (most recent call last):
+[MFLOG|0|2022-02-19T16:54:13.169105Z|runtime|c80936c2-5dc4-4ab5-9a2d-4b1f41589e94]  File "/home/abd/.local/bin/hfquickplot", line 8, in <module>
+[MFLOG|0|2022-02-19T16:54:13.169380Z|runtime|2dc76dd8-3bcd-441e-9296-e7751206a1d8]    sys.exit(toplevel())
+[MFLOG|0|2022-02-19T16:54:13.169580Z|runtime|a33ac7eb-eb6e-4817-8a8a-40b37f80324b]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+[MFLOG|0|2022-02-19T16:54:13.169771Z|runtime|94cd4643-689c-409e-b39f-9827bc6ef149]    return self.main(*args, **kwargs)
+[MFLOG|0|2022-02-19T16:54:13.169953Z|runtime|e76a5368-a4b5-4066-a39a-dfbdf2ff38d3]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 782, in main
+[MFLOG|0|2022-02-19T16:54:13.170130Z|runtime|c78b8c22-3743-4932-9b78-b141cd9f0575]    rv = self.invoke(ctx)
+[MFLOG|0|2022-02-19T16:54:13.170299Z|runtime|b1795fe8-fc54-41c9-afb8-91f222506bf3]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+[MFLOG|0|2022-02-19T16:54:13.170465Z|runtime|a3b79f5e-758e-4878-9fc4-5b3cb03dd9e2]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-02-19T16:54:13.170617Z|runtime|11e87424-e4b7-415d-baab-b6cf839ea70f]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+[MFLOG|0|2022-02-19T16:54:13.170767Z|runtime|7f0cefad-d6bd-426f-96a1-848f38888e31]    return ctx.invoke(self.callback, **ctx.params)
+[MFLOG|0|2022-02-19T16:54:13.170948Z|runtime|794a8017-6327-4818-a79f-8c4d7a4a50d2]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+[MFLOG|0|2022-02-19T16:54:13.171560Z|runtime|4dc2e710-e93d-4eb7-a537-1549976560fe]    return callback(*args, **kwargs)
+[MFLOG|0|2022-02-19T16:54:13.171799Z|runtime|3829671e-e340-441b-b6a2-1ce00b88b43e]  File "/home/abd/.local/lib/python3.8/site-packages/hftools/plotting/quickplot_cli.py", line 82, in plot_channel
+[MFLOG|0|2022-02-19T16:54:16.066360Z|runtime|381720e6-7931-4aec-97d1-106cc758401b]    f = ROOT.TFile.Open(rootfile)
+[MFLOG|0|2022-02-19T16:54:16.066583Z|runtime|2848d209-269d-4eac-b36f-e7f36fa930be]  File "/home/abd/root/root/lib/ROOT/pythonization/_tfile.py", line 67, in _TFileOpen
+[MFLOG|0|2022-02-19T16:54:16.066712Z|runtime|68891519-600f-4236-9944-8d6fb7265366]    raise OSError('Failed to open file {}'.format(str(args[0])))
+[MFLOG|0|2022-02-19T16:54:16.066820Z|runtime|48fb1483-f4a6-498f-b150-4c5d5044ed8c]OSError: Failed to open file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root
+[MFLOG|0|2022-02-19T16:54:16.066933Z|runtime|bd3ef3a0-906e-4511-9baf-a8827bd423b3]+ hfquickplot fit /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/fit_results.yml
+[MFLOG|0|2022-02-19T16:54:16.067039Z|runtime|61d9f7b9-a477-4ed0-9cc5-79a3b1ca49c2]Error in <TFile::TFile>: file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root does not exist
+[MFLOG|0|2022-02-19T16:54:16.067142Z|runtime|ea34c275-b1c7-496a-b6c5-479e8e1c7a10]Traceback (most recent call last):
+[MFLOG|0|2022-02-19T16:54:16.067248Z|runtime|19c537c9-9da0-403b-bb51-858b27c62313]  File "/home/abd/.local/bin/hfquickplot", line 8, in <module>
+[MFLOG|0|2022-02-19T16:54:16.067360Z|runtime|0b309f33-0d99-4985-b916-7792c86c4b64]    sys.exit(toplevel())
+[MFLOG|0|2022-02-19T16:54:16.067472Z|runtime|ba828e71-22e8-4d28-a2ed-46c08775568f]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+[MFLOG|0|2022-02-19T16:54:16.067581Z|runtime|52e22bb5-a0b2-4cce-85a1-7da83d668e99]    return self.main(*args, **kwargs)
+[MFLOG|0|2022-02-19T16:54:16.067697Z|runtime|b1a9fde9-f6e9-428a-b49f-3114e4dc2dba]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 782, in main
+[MFLOG|0|2022-02-19T16:54:16.067817Z|runtime|1f04483a-8119-405b-97ae-4c7820135e8c]    rv = self.invoke(ctx)
+[MFLOG|0|2022-02-19T16:54:16.067931Z|runtime|d1fb6dc0-90b4-42df-b491-832cb73a5fce]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+[MFLOG|0|2022-02-19T16:54:16.068033Z|runtime|61a3d40b-d274-4924-9195-f6eb71fcbf80]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-02-19T16:54:16.068132Z|runtime|a1e126e0-ac2a-493a-8adf-9a3417abf5c4]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+[MFLOG|0|2022-02-19T16:54:16.068233Z|runtime|51767132-6d98-45b8-82e6-ed68f374a9bf]    return ctx.invoke(self.callback, **ctx.params)
+[MFLOG|0|2022-02-19T16:54:16.068331Z|runtime|57e19c7c-0254-4e6d-bc64-92cea9ea443c]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+[MFLOG|0|2022-02-19T16:54:16.068433Z|runtime|77e980d9-10d9-4232-ad5d-fb819d8af795]    return callback(*args, **kwargs)
+[MFLOG|0|2022-02-19T16:54:16.068533Z|runtime|00702ff5-bfdc-4cfd-83eb-fb226a83c422]  File "/home/abd/.local/lib/python3.8/site-packages/hftools/plotting/quickplot_cli.py", line 108, in fit
+[MFLOG|0|2022-02-19T16:54:16.068655Z|runtime|b399bec1-0084-4f00-a3d0-463316d5294e]    f = ROOT.TFile.Open(rootfile)
+[MFLOG|0|2022-02-19T16:54:16.068760Z|runtime|629a7a1a-e58d-4a65-b0c7-66b11ef5e193]  File "/home/abd/root/root/lib/ROOT/pythonization/_tfile.py", line 67, in _TFileOpen
+[MFLOG|0|2022-02-19T16:54:16.068874Z|runtime|ce4fd22a-4867-4b95-94b3-8a16ae02282c]    raise OSError('Failed to open file {}'.format(str(args[0])))
+[MFLOG|0|2022-02-19T16:54:16.068970Z|runtime|257d6680-272d-42c7-b64f-695d7aa47a7c]OSError: Failed to open file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root
+[MFLOG|0|2022-02-19T16:54:16.069076Z|runtime|a7c2572f-bcf2-4608-9c99-96ac5caee84e]+ hfquickplot plot-channel /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined channel1 x /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/fit_results.yml -c qcd,mc2,mc1,signal -o /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/postfit.pdf
+[MFLOG|0|2022-02-19T16:54:16.069184Z|runtime|03ab0a70-44be-47aa-a983-a223e00d6906]Error in <TFile::TFile>: file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root does not exist
+[MFLOG|0|2022-02-19T16:54:16.069291Z|runtime|b1897e38-49b3-47bd-b495-1614ae245c01]Traceback (most recent call last):
+[MFLOG|0|2022-02-19T16:54:16.069413Z|runtime|c42b22ee-5bc6-4e7a-a334-c1b1ddfea327]  File "/home/abd/.local/bin/hfquickplot", line 8, in <module>
+[MFLOG|0|2022-02-19T16:54:16.069557Z|runtime|a80f7438-fdfa-4a0c-b2ab-be0ff971807d]    sys.exit(toplevel())
+[MFLOG|0|2022-02-19T16:54:16.069667Z|runtime|a617fa1d-b574-432e-862d-548f57907723]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+[MFLOG|0|2022-02-19T16:54:16.069771Z|runtime|1eda8169-3320-43a8-a031-9b9a36da3bfe]    return self.main(*args, **kwargs)
+[MFLOG|0|2022-02-19T16:54:16.069900Z|runtime|548d357e-ce5c-496d-94fb-0cf5f167b28e]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 782, in main
+[MFLOG|0|2022-02-19T16:54:16.070025Z|runtime|e089ad47-9510-4c53-b4ff-548b416a430c]    rv = self.invoke(ctx)
+[MFLOG|0|2022-02-19T16:54:16.070136Z|runtime|97f819cf-8eae-4fa9-8543-9d0956dab223]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+[MFLOG|0|2022-02-19T16:54:16.070245Z|runtime|b7dcd632-f2cc-4159-a85b-d506212f12cb]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2022-02-19T16:54:16.070353Z|runtime|27e51fd0-e713-4125-befd-77d71c757b09]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+[MFLOG|0|2022-02-19T16:54:16.070456Z|runtime|feec85b9-a866-4783-81cc-1d9275d48f65]    return ctx.invoke(self.callback, **ctx.params)
+[MFLOG|0|2022-02-19T16:54:16.070559Z|runtime|47609454-9848-40c9-bd45-1eec483f30ae]  File "/home/abd/.local/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+[MFLOG|0|2022-02-19T16:54:16.070662Z|runtime|7080a40a-9639-4fd8-9cf5-6765b29ec7b8]    return callback(*args, **kwargs)
+[MFLOG|0|2022-02-19T16:54:16.070766Z|runtime|bf33584b-0352-43cd-aa93-c5c55a92ec34]  File "/home/abd/.local/lib/python3.8/site-packages/hftools/plotting/quickplot_cli.py", line 82, in plot_channel
+[MFLOG|0|2022-02-19T16:54:16.070876Z|runtime|35e9a186-0aa0-4398-9693-5549be135758]    f = ROOT.TFile.Open(rootfile)
+[MFLOG|0|2022-02-19T16:54:16.070978Z|runtime|5e937ce7-3758-442d-b3e2-60393d0eff95]  File "/home/abd/root/root/lib/ROOT/pythonization/_tfile.py", line 67, in _TFileOpen
+[MFLOG|0|2022-02-19T16:54:16.071077Z|runtime|f316dc28-3095-4530-a0eb-8db794232c07]    raise OSError('Failed to open file {}'.format(str(args[0])))
+[MFLOG|0|2022-02-19T16:54:16.071180Z|runtime|07cb36e2-6822-4bd0-a9a5-dbe7129b3d4a]OSError: Failed to open file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root
+[MFLOG|0|2022-02-19T16:54:16.071286Z|runtime|82e5e44b-1845-4e2f-a780-3c789314dd19]

@@ -1,0 +1,9 @@
+[MFLOG|0|2022-02-19T16:20:34.098196Z|runtime|ba24e082-9d0f-4963-bd1b-4660f0704bac]The command is: 
+[MFLOG|0|2022-02-19T16:20:37.917613Z|runtime|1d393ffd-95af-4483-a679-7223b6027c10] 
+[MFLOG|0|2022-02-19T16:20:37.919042Z|runtime|38d97888-dffc-4864-a216-3a12cc764954]        
+[MFLOG|0|2022-02-19T16:20:37.920008Z|runtime|8d0905b5-5d08-4d70-8a76-461b7984034c]        source /home/abd/root/root/bin/thisroot.sh        
+[MFLOG|0|2022-02-19T16:20:37.921381Z|runtime|7c6f9773-ddd6-405c-a5ef-b241d6ad6336]        python /home/abd/Desktop/Work/Metaflow/BSM-Search/code/histogram.py /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_shape_conv_up.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_shape_conv_up_hist.root mc1 0.01875 nominal mc1_shape_conv_up
+[MFLOG|0|2022-02-19T16:20:37.922424Z|runtime|03171eb6-21c7-461e-bc6f-5f237ddc9473]        
+[MFLOG|0|2022-02-19T16:20:37.923952Z|runtime|2041bc8e-2a35-46b8-a0b0-8ffa4951f81f]The output is: 
+[MFLOG|0|2022-02-19T16:20:37.924176Z|runtime|2009f537-89a1-4eaa-a63d-87d8710a0a84] 
+[MFLOG|0|2022-02-19T16:20:37.924437Z|runtime|cf1d1669-b031-40d0-9043-f3632469e35e]Return Code: 0

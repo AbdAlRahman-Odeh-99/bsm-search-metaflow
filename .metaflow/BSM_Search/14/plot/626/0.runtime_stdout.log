@@ -1,0 +1,174 @@
+[MFLOG|0|2022-02-19T17:00:27.999268Z|runtime|2a720cb2-8c10-43c7-bbd8-2c92614a5d69]The command is: 
+[MFLOG|0|2022-02-19T17:00:27.999561Z|runtime|1afa224f-7f60-4b89-aaef-9ab96afec693] 
+[MFLOG|0|2022-02-19T17:00:27.999708Z|runtime|5e137088-c982-4e16-adb1-1813af1ad7c9]        source /home/abd/root/root/bin/thisroot.sh
+[MFLOG|0|2022-02-19T17:00:27.999858Z|runtime|dcb23ea1-0c8d-4f11-a668-d264d663bc9e]        hfquickplot write-vardef /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/nominal_vals.yml
+[MFLOG|0|2022-02-19T17:00:28.000009Z|runtime|8687574d-5ac2-4494-b5d3-56b9c0dd9ced]        hfquickplot plot-channel /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined channel1 x /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/nominal_vals.yml -c qcd,mc2,mc1,signal -o /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/prefit.pdf
+[MFLOG|0|2022-02-19T17:00:28.000156Z|runtime|e5f17e44-9d76-4238-8e19-f6185eb3912a]        hfquickplot fit /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/fit_results.yml
+[MFLOG|0|2022-02-19T17:00:28.000305Z|runtime|ed9f7f98-6ea3-4053-a8e1-bc359cff44a5]        hfquickplot plot-channel /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root combined channel1 x /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/fit_results.yml -c qcd,mc2,mc1,signal -o /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/postfit.pdf
+[MFLOG|0|2022-02-19T17:00:28.000451Z|runtime|6b2fff24-b141-44b2-9c56-af9567de7768]	
+[MFLOG|0|2022-02-19T17:00:28.000592Z|runtime|79e646de-3607-4d27-9536-774c57ddb04c]The output is: 
+[MFLOG|0|2022-02-19T17:00:28.000735Z|runtime|0ebdf51d-36b1-4c51-890b-e943d40f6a51] 
+[MFLOG|0|2022-02-19T17:00:28.000909Z|runtime|dfcc3bbb-d6e1-4a31-969a-09d86c052ace][1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+[MFLOG|0|2022-02-19T17:00:28.001054Z|runtime|3916493d-da86-4138-a0af-2b3542a591ab]                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+[MFLOG|0|2022-02-19T17:00:28.001187Z|runtime|26cc8600-69e9-4be2-8325-8a1a48af84e6]                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+[MFLOG|0|2022-02-19T17:00:28.001320Z|runtime|58b5c44b-b95f-4286-8bf7-ec0d378fdac2]
+[MFLOG|0|2022-02-19T17:00:28.001446Z|runtime|f1530019-04cb-4f02-b7b8-1e1731889336]getting workspace
+[MFLOG|0|2022-02-19T17:00:28.001570Z|runtime|30d3c43e-61cd-40e2-b39d-ed625b1d2bec]
+[MFLOG|0|2022-02-19T17:00:28.001689Z|runtime|06319a5a-c894-4920-a519-aff90e09e33f][1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+[MFLOG|0|2022-02-19T17:00:28.001811Z|runtime|ee9a43c9-5615-4baa-b729-91a326dccfbf]                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+[MFLOG|0|2022-02-19T17:00:28.001937Z|runtime|5e738764-8f1f-45b3-9d66-992bfc584efd]                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+[MFLOG|0|2022-02-19T17:00:28.002077Z|runtime|20a3684f-7255-4e92-a631-20d781d8e6a9]
+[MFLOG|0|2022-02-19T17:00:28.002221Z|runtime|b9836adc-363d-4cc9-b36b-37f19bc8569a]getting workspace
+[MFLOG|0|2022-02-19T17:00:28.002363Z|runtime|5a5252d9-e2fb-489e-9af8-ee3f24bee1c8]<module 'hftools.plotting' from '/home/abd/.local/lib/python3.8/site-packages/hftools/plotting/__init__.py'>
+[MFLOG|0|2022-02-19T17:00:28.002500Z|runtime|dbc54342-dba6-41c3-a03e-1c690b2984cf][#1] INFO:InputArguments -- The formula channelCat == channelCat::channel1 claims to use the variables (channelCat,obs_x_channel1) but only (channelCat) seem to be in use.
+[MFLOG|0|2022-02-19T17:00:28.002647Z|runtime|9d757e43-0a43-4bc5-8175-fd041fcea0de]  inputs:         channelCat == channelCat::channel1
+[MFLOG|0|2022-02-19T17:00:28.002782Z|runtime|b4375259-a607-4909-a709-f74dea101575][#0] WARNING:InputArguments -- RooAbsReal::createHistogram(L_x_qcd_channel1_overallSyst_x_Exp) WARNING extended mode requested for a non-pdf object, ignored
+[MFLOG|0|2022-02-19T17:00:28.002916Z|runtime|07bc504e-43e4-4587-8fd0-34f06f80a279][#1] INFO:InputArguments -- RooAbsReal::createHistogram(L_x_qcd_channel1_overallSyst_x_Exp) INFO: Model has intrinsic binning definition, selecting that binning for the histogram
+[MFLOG|0|2022-02-19T17:00:28.003054Z|runtime|3ea54684-4011-4374-a833-94690e165c89][#0] WARNING:InputArguments -- RooAbsReal::createHistogram(L_x_mc2_channel1_overallSyst_x_HistSyst) WARNING extended mode requested for a non-pdf object, ignored
+[MFLOG|0|2022-02-19T17:00:28.003196Z|runtime|ab02c04e-28e8-4b54-bf3a-e8f14e4792aa][#1] INFO:InputArguments -- RooAbsReal::createHistogram(L_x_mc2_channel1_overallSyst_x_HistSyst) INFO: Model has intrinsic binning definition, selecting that binning for the histogram
+[MFLOG|0|2022-02-19T17:00:28.003347Z|runtime|76c0b736-1e5e-40e5-aa0a-0d0932af77a5][#0] WARNING:InputArguments -- RooAbsReal::createHistogram(L_x_mc1_channel1_overallSyst_x_HistSyst) WARNING extended mode requested for a non-pdf object, ignored
+[MFLOG|0|2022-02-19T17:00:28.003500Z|runtime|1badb263-637c-4227-8a26-7c022e2160cb][#1] INFO:InputArguments -- RooAbsReal::createHistogram(L_x_mc1_channel1_overallSyst_x_HistSyst) INFO: Model has intrinsic binning definition, selecting that binning for the histogram
+[MFLOG|0|2022-02-19T17:00:28.003642Z|runtime|8baa7163-7f3f-4952-a50b-01abb4ae6728][#0] WARNING:InputArguments -- RooAbsReal::createHistogram(L_x_signal_channel1_overallSyst_x_Exp) WARNING extended mode requested for a non-pdf object, ignored
+[MFLOG|0|2022-02-19T17:00:28.004089Z|runtime|c196ff16-bb9f-4282-8054-d087820791b2][#1] INFO:InputArguments -- RooAbsReal::createHistogram(L_x_signal_channel1_overallSyst_x_Exp) INFO: Model has intrinsic binning definition, selecting that binning for the histogram
+[MFLOG|0|2022-02-19T17:00:28.004296Z|runtime|f2f40878-1835-4b63-9da1-ef2933fbd8fc]
+[MFLOG|0|2022-02-19T17:00:28.004462Z|runtime|f3b8f83c-c456-4a18-9ca1-cb9fcb905b4b][1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+[MFLOG|0|2022-02-19T17:00:28.004628Z|runtime|b6fdfe1a-5a4c-46b0-ae2f-adf2e20e845d]                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+[MFLOG|0|2022-02-19T17:00:28.004817Z|runtime|d0419bce-e6b1-4c7d-8420-365ad3918335]                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+[MFLOG|0|2022-02-19T17:00:28.004998Z|runtime|16c09abd-8984-4e39-8740-f3767afe0fe0]
+[MFLOG|0|2022-02-19T17:00:28.005177Z|runtime|d83e37f3-9042-4abf-8527-25b16a93965f]getting workspace
+[MFLOG|0|2022-02-19T17:00:28.005366Z|runtime|2961332a-aaa7-4e52-9cb2-5474ed19dbad][#1] INFO:Minization -- createNLL: caching constraint set under name CONSTR_OF_PDF_simPdf_FOR_OBS_channelCat:obs_x_channel1 with 5 entries
+[MFLOG|0|2022-02-19T17:00:28.005547Z|runtime|62b78e77-8195-49e5-8668-0d715f7f2c75][#1] INFO:Minization --  Including the following constraint terms in minimization: (lumiConstraint,alpha_mc1_weight_var1Constraint,alpha_mc1_shape_convConstraint,alpha_mc2_weight_var1Constraint,alpha_mc2_shape_convConstraint)
+[MFLOG|0|2022-02-19T17:00:28.005777Z|runtime|fcf77615-1cab-46a2-a289-ffa0a12be4e7]RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state channel1 (50 dataset entries)
+[MFLOG|0|2022-02-19T17:00:28.005974Z|runtime|4d1cd9a3-b62f-4361-9dac-db6f38c8f238][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T17:00:28.006162Z|runtime|ba57c04a-bbff-4c92-8e96-68af70a38bc8][#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 1 slave calculators.
+[MFLOG|0|2022-02-19T17:00:28.006361Z|runtime|00df3972-fec9-4d7c-a440-e65fe82704b2][#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[MFLOG|0|2022-02-19T17:00:28.006555Z|runtime|044377fa-f9fc-46e0-89fc-ac7a6b06f076][#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[MFLOG|0|2022-02-19T17:00:28.006721Z|runtime|6916d33b-c14f-45d4-a116-1b622d71ca01][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T17:00:28.006887Z|runtime|c6b901fd-b7da-41c9-95bf-43c26b202b2a][#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (signal_channel1_nominal,qcd_channel1_overallSyst_x_Exp,mc1_channel1_Hist_alphanominal,mc1_channel1_Hist_alpha_0low,mc1_channel1_Hist_alpha_1low,mc1_channel1_Hist_alpha_0high,mc1_channel1_Hist_alpha_1high,mc2_channel1_Hist_alphanominal,mc2_channel1_Hist_alpha_0low,mc2_channel1_Hist_alpha_1low,mc2_channel1_Hist_alpha_0high,mc2_channel1_Hist_alpha_1high)
+[MFLOG|0|2022-02-19T17:00:28.007080Z|runtime|e7478dbb-13fd-46fa-af91-5c7a5b7ee266][#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (mc1_channel1_Hist_alpha,mc2_channel1_Hist_alpha)
+[MFLOG|0|2022-02-19T17:00:28.007258Z|runtime|50d98d27-1878-47c5-9654-58a5b3841be7] **********
+[MFLOG|0|2022-02-19T17:00:28.007437Z|runtime|d3e57e30-b8cd-4a79-a58d-3d74777c2bb1] **    1 **SET PRINT           1
+[MFLOG|0|2022-02-19T17:00:28.007619Z|runtime|59f0367c-59b9-4050-9187-092ca96c871c] **********
+[MFLOG|0|2022-02-19T17:00:28.007821Z|runtime|2d5e17c6-9a71-4cc9-be89-f63e7ce5dea0] **********
+[MFLOG|0|2022-02-19T17:00:28.008007Z|runtime|417f5a09-0515-4971-b3f3-8e3c9a3af7ff] **    2 **SET NOGRAD
+[MFLOG|0|2022-02-19T17:00:28.008179Z|runtime|93c49c65-84dc-4aba-9ca2-47aa1b1c38d7] **********
+[MFLOG|0|2022-02-19T17:00:28.008350Z|runtime|87a42b3d-1633-4b21-8511-36afd2af1864] PARAMETER DEFINITIONS:
+[MFLOG|0|2022-02-19T17:00:28.008516Z|runtime|5d126262-b23c-41e7-b788-bffa72b72656]    NO.   NAME         VALUE      STEP SIZE      LIMITS
+[MFLOG|0|2022-02-19T17:00:28.008696Z|runtime|6503353a-09d7-410a-9fd1-f2b8d1c8a5cd]     1 Lumi         1.00000e+00  5.00000e-01    0.00000e+00  1.00000e+01
+[MFLOG|0|2022-02-19T17:00:28.008891Z|runtime|d15cd9fd-3e4a-48c9-a267-9658dfd327d7]     2 SigXsecOverSM   1.00000e+00  3.00000e-01    0.00000e+00  3.00000e+00
+[MFLOG|0|2022-02-19T17:00:28.009065Z|runtime|fa9ba806-93b5-4a45-9a56-08ea9b8f8f38]     3 alpha_mc1_shape_conv   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+[MFLOG|0|2022-02-19T17:00:28.009287Z|runtime|7fc4347e-44d0-4a48-9efc-d4a454d5c6f2]     4 alpha_mc1_weight_var1   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+[MFLOG|0|2022-02-19T17:00:28.009478Z|runtime|0bdfd9e6-549b-4f7e-9235-c598b4684db5]     5 alpha_mc2_shape_conv   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+[MFLOG|0|2022-02-19T17:00:28.010645Z|runtime|f9d4a1a7-680a-41a7-a8bd-8aa5f01ec126]     6 alpha_mc2_weight_var1   0.00000e+00  1.00000e+00   -5.00000e+00  5.00000e+00
+[MFLOG|0|2022-02-19T17:00:28.010853Z|runtime|5eeb124d-1cff-45ad-9376-54e454375be2] **********
+[MFLOG|0|2022-02-19T17:00:28.011000Z|runtime|177abffd-4db7-43b5-881b-55cb2d79d516] **    3 **SET ERR         0.5
+[MFLOG|0|2022-02-19T17:00:28.011229Z|runtime|5c4ab536-1af8-44ca-abae-c0728d635f69] **********
+[MFLOG|0|2022-02-19T17:00:28.011398Z|runtime|f650fadf-c818-4b6c-b580-1624bfdc0911] **********
+[MFLOG|0|2022-02-19T17:00:28.011529Z|runtime|40a8ec74-14e2-4a60-a468-9b563c40eb65] **    4 **SET PRINT           1
+[MFLOG|0|2022-02-19T17:00:28.011643Z|runtime|1c960239-d89a-472b-a114-e80bf1e3cdc6] **********
+[MFLOG|0|2022-02-19T17:00:28.011747Z|runtime|f1ee8896-f4d1-4d64-89eb-eec2c094487f] **********
+[MFLOG|0|2022-02-19T17:00:28.011881Z|runtime|10385752-839c-4890-a21f-a2b61244d0ab] **    5 **SET STR           1
+[MFLOG|0|2022-02-19T17:00:28.012046Z|runtime|55094260-b3fa-4a03-bafa-ca07f52f4cc9] **********
+[MFLOG|0|2022-02-19T17:00:28.012185Z|runtime|6e596683-79e8-4915-b8e5-1591cbcc72f2] NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+[MFLOG|0|2022-02-19T17:00:28.012326Z|runtime|396a49d0-6fea-4c2a-bf5b-062660bda880] **********
+[MFLOG|0|2022-02-19T17:00:28.012473Z|runtime|d13da3a4-84d7-454e-8e14-720e03d48e63] **    6 **MIGRAD        3000           1
+[MFLOG|0|2022-02-19T17:00:28.012617Z|runtime|573def34-b6c3-4cd1-a79f-17adedc94625] **********
+[MFLOG|0|2022-02-19T17:00:28.012756Z|runtime|f52decd1-d2ca-4638-a6cf-3772c55366ae] FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+[MFLOG|0|2022-02-19T17:00:28.012919Z|runtime|4b83182c-3b6b-4a08-8808-f1657fd99446][#1] INFO:Minization -- RooNLLVar::evaluatePartition(channel1) first = 0 last = 50 Likelihood offset now set to -74297.6
+[MFLOG|0|2022-02-19T17:00:28.013085Z|runtime|b96110fd-8d3c-4896-aaba-7b4fdaf61d09] START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+[MFLOG|0|2022-02-19T17:00:28.013260Z|runtime|70b112ba-d625-4409-8422-eb8bc832e8a8] FCN=2.29211 FROM MIGRAD    STATUS=INITIATE       24 CALLS          25 TOTAL
+[MFLOG|0|2022-02-19T17:00:28.013416Z|runtime|351d9c40-37f5-45a0-b0f7-d5bef3641adb]                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+[MFLOG|0|2022-02-19T17:00:28.013570Z|runtime|f27e06a1-9bf3-4afc-bed2-f8516f69dd7e]  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+[MFLOG|0|2022-02-19T17:00:28.013718Z|runtime|5031c32d-28ce-4e82-bcda-40695fd5e05d]  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+[MFLOG|0|2022-02-19T17:00:28.013856Z|runtime|a14d25e4-940c-4daa-b96a-45d69a210c39]   1  Lumi         1.00000e+00   5.00000e-01   1.72186e-01   7.63472e+02
+[MFLOG|0|2022-02-19T17:00:28.013981Z|runtime|b0eaca34-169c-4fc1-9fab-724da8c42fe5]   2  SigXsecOverSM   1.00000e+00   3.00000e-01   2.14402e-01   2.29162e+01
+[MFLOG|0|2022-02-19T17:00:28.014092Z|runtime|2514b45b-d35f-44aa-969d-3f69de169287]   3  alpha_mc1_shape_conv   0.00000e+00   1.00000e+00   2.01358e-01   1.16457e+01
+[MFLOG|0|2022-02-19T17:00:28.014194Z|runtime|be3db77b-5f31-4684-9879-5b2f8c62f472]   4  alpha_mc1_weight_var1   0.00000e+00   1.00000e+00   2.01358e-01  -6.94615e+00
+[MFLOG|0|2022-02-19T17:00:28.014302Z|runtime|cdc9a987-e350-429b-b203-8fb79dd661f5]   5  alpha_mc2_shape_conv   0.00000e+00   1.00000e+00   2.01358e-01   1.20899e+02
+[MFLOG|0|2022-02-19T17:00:28.014411Z|runtime|3288a4d0-a3de-45bc-b401-bbed7058dac5]   6  alpha_mc2_weight_var1   0.00000e+00   1.00000e+00   2.01358e-01   3.95148e+00
+[MFLOG|0|2022-02-19T17:00:28.014522Z|runtime|a322d41d-51c3-4530-bb42-1e664522dde1]                               ERR DEF= 0.5
+[MFLOG|0|2022-02-19T17:00:28.014626Z|runtime|81be4a58-bf98-41ef-a3e2-1720d8f683bb] MIGRAD MINIMIZATION HAS CONVERGED.
+[MFLOG|0|2022-02-19T17:00:28.014754Z|runtime|6941830b-3cdb-4689-8a18-fbfb0b659440] MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+[MFLOG|0|2022-02-19T17:00:28.014864Z|runtime|d49b31d6-0c08-4d1a-91b6-ac9cbf8d44b5] COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+[MFLOG|0|2022-02-19T17:00:28.014968Z|runtime|8836cc21-26b4-488b-926e-c86399550632] FCN=-6.53451 FROM MIGRAD    STATUS=CONVERGED     150 CALLS         151 TOTAL
+[MFLOG|0|2022-02-19T17:00:28.015079Z|runtime|c15ce65d-efff-44e7-8f25-16535cce9405]                     EDM=0.000264415    STRATEGY= 1      ERROR MATRIX ACCURATE 
+[MFLOG|0|2022-02-19T17:00:28.015193Z|runtime|4e0fd7e7-5021-4889-9f11-f38c159c0985]  EXT PARAMETER                                   STEP         FIRST   
+[MFLOG|0|2022-02-19T17:00:28.015297Z|runtime|064e37fb-578f-4079-a92e-1bc7edc1af35]  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+[MFLOG|0|2022-02-19T17:00:28.015417Z|runtime|960a1adc-8d18-4a74-b6b3-b2a2cc31cff6]   1  Lumi         9.77532e-01   1.31294e-02   5.45593e-06  -1.61497e+00
+[MFLOG|0|2022-02-19T17:00:28.015528Z|runtime|f55c53c7-c5d4-42eb-acb0-8aeda3d245c0]   2  SigXsecOverSM   3.93879e-01   2.68607e-01   3.96307e-04   3.87139e-02
+[MFLOG|0|2022-02-19T17:00:28.015635Z|runtime|86f9e226-ed39-41a6-b635-de8c558f915b]   3  alpha_mc1_shape_conv   7.53417e-02   1.44093e-01   4.05840e-05  -6.47105e-02
+[MFLOG|0|2022-02-19T17:00:28.015735Z|runtime|a9fed24b-4441-4695-b780-22a25c4ed826]   4  alpha_mc1_weight_var1   8.59512e-01   6.85260e-01   1.68242e-04  -1.83085e-02
+[MFLOG|0|2022-02-19T17:00:28.015846Z|runtime|75f44e14-0232-44b4-8cea-5fc8b543673d]   5  alpha_mc2_shape_conv  -4.58582e-02   1.20952e-01   3.51719e-05  -1.49713e-01
+[MFLOG|0|2022-02-19T17:00:28.015954Z|runtime|e9650b81-323e-42a9-83ed-3fc1050c2cf6]   6  alpha_mc2_weight_var1   1.77974e-01   8.06341e-01   2.13823e-04  -3.22477e-03
+[MFLOG|0|2022-02-19T17:00:28.016059Z|runtime|b8ae53fb-78f4-4d88-86a8-9b7860a92a0a]                               ERR DEF= 0.5
+[MFLOG|0|2022-02-19T17:00:28.016164Z|runtime|9e0bfc95-1070-4dcc-9681-32cd2268caef] EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  6    ERR DEF=0.5
+[MFLOG|0|2022-02-19T17:00:28.016273Z|runtime|5487c260-6c23-4e39-9fb5-b3b8f2740ecd]  1.724e-04 -1.356e-03 -1.945e-04 -4.233e-03 -5.369e-05 -3.254e-03 
+[MFLOG|0|2022-02-19T17:00:28.016376Z|runtime|8369262f-6139-4bf3-b2c1-f689c5ee1921] -1.356e-03  7.391e-02 -5.519e-03 -4.660e-03 -1.357e-02  4.022e-02 
+[MFLOG|0|2022-02-19T17:00:28.016477Z|runtime|aa52e034-2d66-4efd-b5a4-b805713ad6fb] -1.945e-04 -5.519e-03  2.077e-02  4.771e-02  4.624e-03 -6.114e-02 
+[MFLOG|0|2022-02-19T17:00:28.016581Z|runtime|38e3a7b2-343e-4c61-8d7e-d37cb772988c] -4.233e-03 -4.660e-03  4.771e-02  4.726e-01  3.783e-02 -1.663e-01 
+[MFLOG|0|2022-02-19T17:00:28.016686Z|runtime|c6d53de7-64f3-4588-a36d-57e9ded7ad2a] -5.369e-05 -1.357e-02  4.624e-03  3.783e-02  1.463e-02 -2.460e-02 
+[MFLOG|0|2022-02-19T17:00:28.016803Z|runtime|8ee2738b-5085-4227-a442-3a3c4e8ba5d9] -3.254e-03  4.022e-02 -6.114e-02 -1.663e-01 -2.460e-02  6.559e-01 
+[MFLOG|0|2022-02-19T17:00:28.016914Z|runtime|f32d20c7-855e-46dc-beb8-f39f9c742431] PARAMETER  CORRELATION COEFFICIENTS  
+[MFLOG|0|2022-02-19T17:00:28.017021Z|runtime|2c04d611-abc5-4ef4-b6f0-984923b8ba3d]       NO.  GLOBAL      1      2      3      4      5      6
+[MFLOG|0|2022-02-19T17:00:28.017129Z|runtime|098f9cbb-d844-4fa1-9909-05526de3f601]        1  0.73887   1.000 -0.380 -0.103 -0.469 -0.034 -0.306
+[MFLOG|0|2022-02-19T17:00:28.017236Z|runtime|fbd07505-6df1-4ccb-89a4-4d274260b87e]        2  0.58510  -0.380  1.000 -0.141 -0.025 -0.413  0.183
+[MFLOG|0|2022-02-19T17:00:28.017344Z|runtime|19e2cba9-e907-419e-a9bc-7467951e83c2]        3  0.63918  -0.103 -0.141  1.000  0.482  0.265 -0.524
+[MFLOG|0|2022-02-19T17:00:28.017474Z|runtime|978d2777-0abe-4d83-9bc2-85a3dd5dc2be]        4  0.75287  -0.469 -0.025  0.482  1.000  0.455 -0.299
+[MFLOG|0|2022-02-19T17:00:28.017595Z|runtime|3a0069fe-1410-426a-9e56-0d632f2062c6]        5  0.60934  -0.034 -0.413  0.265  0.455  1.000 -0.251
+[MFLOG|0|2022-02-19T17:00:28.017700Z|runtime|69e4ed56-3f8b-4309-9d9a-401bcf0314b7]        6  0.69403  -0.306  0.183 -0.524 -0.299 -0.251  1.000
+[MFLOG|0|2022-02-19T17:00:28.017809Z|runtime|54f05498-84f3-4437-bc3d-af6ee9e57542] **********
+[MFLOG|0|2022-02-19T17:00:28.017917Z|runtime|1322a67c-e376-4d15-9848-76678aeda50b] **    7 **SET ERR         0.5
+[MFLOG|0|2022-02-19T17:00:28.018025Z|runtime|7dfbd6df-ea91-4486-b984-d7686597322c] **********
+[MFLOG|0|2022-02-19T17:00:28.018126Z|runtime|cec48f9e-174a-47a0-a7ac-91af42430988] **********
+[MFLOG|0|2022-02-19T17:00:28.018235Z|runtime|3fc6192d-7678-4b07-860a-12e4c8713c9f] **    8 **SET PRINT           1
+[MFLOG|0|2022-02-19T17:00:28.018346Z|runtime|4066532d-99b5-4074-8f8e-3d1114d08ee8] **********
+[MFLOG|0|2022-02-19T17:00:28.018460Z|runtime|4135afc7-76d9-4819-8cb1-c603ee01d6f1] **********
+[MFLOG|0|2022-02-19T17:00:28.018571Z|runtime|3d7f6e3d-63fa-4404-b4d2-5c9facf50406] **    9 **HESSE        3000
+[MFLOG|0|2022-02-19T17:00:28.018686Z|runtime|efa3b8a5-607d-4e91-8038-6efc867409ef] **********
+[MFLOG|0|2022-02-19T17:00:28.018795Z|runtime|a47ecac5-634b-42e3-b3b6-8b2845ae2602] COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+[MFLOG|0|2022-02-19T17:00:28.018920Z|runtime|4c79dd49-c4c0-4ceb-9a1d-18de3a024b6c] FCN=-6.53451 FROM HESSE     STATUS=OK             40 CALLS         191 TOTAL
+[MFLOG|0|2022-02-19T17:00:28.019049Z|runtime|bf071d74-fe6c-4233-84fd-064694a77ac0]                     EDM=0.00026432    STRATEGY= 1      ERROR MATRIX ACCURATE 
+[MFLOG|0|2022-02-19T17:00:28.019181Z|runtime|10caf769-9c63-4baa-b2bd-2f7c2dcd17c4]  EXT PARAMETER                                INTERNAL      INTERNAL  
+[MFLOG|0|2022-02-19T17:00:28.019306Z|runtime|9047ffde-e065-4c6d-9710-8746bd85806b]  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+[MFLOG|0|2022-02-19T17:00:28.019431Z|runtime|05662b36-933d-47d4-8681-7986f43a66f9]   1  Lumi         9.77532e-01   1.31272e-02   1.09119e-06  -9.34822e-01
+[MFLOG|0|2022-02-19T17:00:28.019557Z|runtime|c2f6a58e-c795-4cdb-9c2e-5018d5e31560]   2  SigXsecOverSM   3.93879e-01   2.68592e-01   7.92613e-05  -8.29233e-01
+[MFLOG|0|2022-02-19T17:00:28.019676Z|runtime|56c4634e-1ff4-485c-8877-7270bce818df]   3  alpha_mc1_shape_conv   7.53417e-02   1.44085e-01   8.11679e-06   1.50689e-02
+[MFLOG|0|2022-02-19T17:00:28.019799Z|runtime|f3cb4fc4-bd44-4ac1-9c07-7d108aa1244d]   4  alpha_mc1_weight_var1   8.59512e-01   6.85159e-01   3.36484e-05   1.72760e-01
+[MFLOG|0|2022-02-19T17:00:28.019917Z|runtime|1c3c1c99-8032-4542-8fde-074e15c2def2]   5  alpha_mc2_shape_conv  -4.58582e-02   1.20946e-01   7.03438e-06  -9.17176e-03
+[MFLOG|0|2022-02-19T17:00:28.020041Z|runtime|1c99c4a6-7b59-4fe3-bb6e-e5f78f15d92d]   6  alpha_mc2_weight_var1   1.77974e-01   8.06171e-01   4.27645e-05   3.56023e-02
+[MFLOG|0|2022-02-19T17:00:28.020165Z|runtime|0f6e28e1-42c7-4693-843f-deaddcce550d]                               ERR DEF= 0.5
+[MFLOG|0|2022-02-19T17:00:28.020285Z|runtime|792a3c40-6865-461b-9106-4862d61b5580] EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  6    ERR DEF=0.5
+[MFLOG|0|2022-02-19T17:00:28.020406Z|runtime|100998e7-eb0a-4f6e-b79f-881302ffe38c]  1.723e-04 -1.355e-03 -1.947e-04 -4.233e-03 -5.396e-05 -3.251e-03 
+[MFLOG|0|2022-02-19T17:00:28.020524Z|runtime|c480803f-f152-4812-9abe-0368caab0b45] -1.355e-03  7.390e-02 -5.513e-03 -4.644e-03 -1.357e-02  4.017e-02 
+[MFLOG|0|2022-02-19T17:00:28.020643Z|runtime|105bccb8-e076-4dfb-a426-0ddabb86c629] -1.947e-04 -5.513e-03  2.077e-02  4.769e-02  4.621e-03 -6.112e-02 
+[MFLOG|0|2022-02-19T17:00:28.020762Z|runtime|bd17d6ab-4f21-4ac8-b205-fb52e4e38904] -4.233e-03 -4.644e-03  4.769e-02  4.725e-01  3.782e-02 -1.662e-01 
+[MFLOG|0|2022-02-19T17:00:28.020894Z|runtime|2038c744-f2d6-4479-89a4-3d09a5e16532] -5.396e-05 -1.357e-02  4.621e-03  3.782e-02  1.463e-02 -2.457e-02 
+[MFLOG|0|2022-02-19T17:00:28.021029Z|runtime|e909ac48-17f1-40ff-87ba-e3ef17b124ea] -3.251e-03  4.017e-02 -6.112e-02 -1.662e-01 -2.457e-02  6.556e-01 
+[MFLOG|0|2022-02-19T17:00:28.021165Z|runtime|064053da-00ff-4f24-b624-5ee66bdf3834] PARAMETER  CORRELATION COEFFICIENTS  
+[MFLOG|0|2022-02-19T17:00:28.021301Z|runtime|db7792de-5937-42e0-a9ac-e70f8e5d1f94]       NO.  GLOBAL      1      2      3      4      5      6
+[MFLOG|0|2022-02-19T17:00:28.021433Z|runtime|fd5d0e9e-5aaf-4a4e-bb9d-bbe54a5e84bc]        1  0.73879   1.000 -0.380 -0.103 -0.469 -0.034 -0.306
+[MFLOG|0|2022-02-19T17:00:28.021565Z|runtime|56e35685-3858-4fc4-814a-a4d19adb0d7c]        2  0.58500  -0.380  1.000 -0.141 -0.025 -0.413  0.182
+[MFLOG|0|2022-02-19T17:00:28.021696Z|runtime|a342aeb3-1219-4927-bb34-06b44de030fd]        3  0.63912  -0.103 -0.141  1.000  0.481  0.265 -0.524
+[MFLOG|0|2022-02-19T17:00:28.021826Z|runtime|9cfc3931-6343-4790-9586-4111c8c1791e]        4  0.75280  -0.469 -0.025  0.481  1.000  0.455 -0.299
+[MFLOG|0|2022-02-19T17:00:28.021948Z|runtime|6a5f2ffc-1409-4db2-af21-a3683b1fb0bb]        5  0.60923  -0.034 -0.413  0.265  0.455  1.000 -0.251
+[MFLOG|0|2022-02-19T17:00:28.022078Z|runtime|f21d2788-12df-43fe-8cac-151fc8264ed2]        6  0.69392  -0.306  0.182 -0.524 -0.299 -0.251  1.000
+[MFLOG|0|2022-02-19T17:00:28.022200Z|runtime|edd1d5a4-837f-425f-bcb5-a0c8c9fa9928][#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[MFLOG|0|2022-02-19T17:00:28.022322Z|runtime|19f63651-bd67-4cf3-a751-67a8e41d5b51]
+[MFLOG|0|2022-02-19T17:00:28.022448Z|runtime|341b6ccb-69b6-4a8d-b526-e1c796102876][1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+[MFLOG|0|2022-02-19T17:00:28.022567Z|runtime|1c148a23-4d8f-46ac-a961-c54c849181c9]                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+[MFLOG|0|2022-02-19T17:00:28.022680Z|runtime|bc2e5c7d-cfb9-4129-a7fc-e17582bb70a7]                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+[MFLOG|0|2022-02-19T17:00:28.022790Z|runtime|ca7fc7a0-bd11-4519-be47-917ecfd89d3d]
+[MFLOG|0|2022-02-19T17:00:28.022947Z|runtime|1e42fb1f-82ba-466d-b777-7c73bf2a0d7a]getting workspace
+[MFLOG|0|2022-02-19T17:00:28.023083Z|runtime|d87c27ee-767d-4a28-9e1e-bdd7e6398f5d]<module 'hftools.plotting' from '/home/abd/.local/lib/python3.8/site-packages/hftools/plotting/__init__.py'>
+[MFLOG|0|2022-02-19T17:00:28.023232Z|runtime|e41f9ac0-fcd5-4ae6-b1cb-2e8dfb055915][#1] INFO:InputArguments -- The formula channelCat == channelCat::channel1 claims to use the variables (channelCat,obs_x_channel1) but only (channelCat) seem to be in use.
+[MFLOG|0|2022-02-19T17:00:28.023388Z|runtime|f7952278-cd8d-4467-803c-d7dece71c160]  inputs:         channelCat == channelCat::channel1
+[MFLOG|0|2022-02-19T17:00:28.023522Z|runtime|28b0166b-3286-4757-8641-85e6953ab48d][#0] WARNING:InputArguments -- RooAbsReal::createHistogram(L_x_qcd_channel1_overallSyst_x_Exp) WARNING extended mode requested for a non-pdf object, ignored
+[MFLOG|0|2022-02-19T17:00:28.023666Z|runtime|81d2adee-85e1-4b9c-8d2b-137e4421ee32][#1] INFO:InputArguments -- RooAbsReal::createHistogram(L_x_qcd_channel1_overallSyst_x_Exp) INFO: Model has intrinsic binning definition, selecting that binning for the histogram
+[MFLOG|0|2022-02-19T17:00:28.792733Z|runtime|0ddba430-be86-405f-b6c9-72ba6b887a0a][#0] WARNING:InputArguments -- RooAbsReal::createHistogram(L_x_mc2_channel1_overallSyst_x_HistSyst) WARNING extended mode requested for a non-pdf object, ignored
+[MFLOG|0|2022-02-19T17:00:28.792909Z|runtime|3bf4906e-516d-4449-9ae5-0f4f245f6f41][#1] INFO:InputArguments -- RooAbsReal::createHistogram(L_x_mc2_channel1_overallSyst_x_HistSyst) INFO: Model has intrinsic binning definition, selecting that binning for the histogram
+[MFLOG|0|2022-02-19T17:00:28.792991Z|runtime|2f65a19a-7a41-46e9-837f-0cb3df55cc37][#0] WARNING:InputArguments -- RooAbsReal::createHistogram(L_x_mc1_channel1_overallSyst_x_HistSyst) WARNING extended mode requested for a non-pdf object, ignored
+[MFLOG|0|2022-02-19T17:00:28.793085Z|runtime|93d57ec6-2114-4968-b4c6-6ad9156aca3c][#1] INFO:InputArguments -- RooAbsReal::createHistogram(L_x_mc1_channel1_overallSyst_x_HistSyst) INFO: Model has intrinsic binning definition, selecting that binning for the histogram
+[MFLOG|0|2022-02-19T17:00:28.793199Z|runtime|a29ee1a5-2b3c-4f7d-815c-1da55d73943e][#0] WARNING:InputArguments -- RooAbsReal::createHistogram(L_x_signal_channel1_overallSyst_x_Exp) WARNING extended mode requested for a non-pdf object, ignored
+[MFLOG|0|2022-02-19T17:00:28.793312Z|runtime|aa8390cf-f94a-4415-ac09-eb39bcd69b6d][#1] INFO:InputArguments -- RooAbsReal::createHistogram(L_x_signal_channel1_overallSyst_x_Exp) INFO: Model has intrinsic binning definition, selecting that binning for the histogram
+[MFLOG|0|2022-02-19T17:00:28.793440Z|runtime|d0a3b947-7920-4a55-be54-f12053c627b1]
+[MFLOG|0|2022-02-19T17:00:28.793765Z|runtime|57c0c115-c27e-4b53-8ed8-1caeeec260c6]Return Code: 0

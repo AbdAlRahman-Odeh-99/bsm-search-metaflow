@@ -1,0 +1,11 @@
+[MFLOG|0|2022-02-19T17:40:41.244684Z|runtime|32d4a645-6b67-424b-860a-a1106eb078d2]The command is: 
+[MFLOG|0|2022-02-19T17:40:47.342945Z|runtime|02be576c-3c6c-4fcb-91d6-a1b1de71b1d5] 
+[MFLOG|0|2022-02-19T17:40:47.343741Z|runtime|c517ad9e-3bf1-467b-8230-61ce0fc533ef]        
+[MFLOG|0|2022-02-19T17:40:47.344307Z|runtime|87ba5ca7-3d4d-4976-be24-9f5296e69457]        source /home/abd/root/root/bin/thisroot.sh
+[MFLOG|0|2022-02-19T17:40:47.344843Z|runtime|5ac870d2-6b0b-4c13-90d6-8cfc66d1b2ab]        pwd
+[MFLOG|0|2022-02-19T17:40:47.345567Z|runtime|19ece03c-847a-4670-897e-e0ef5039111a]        python /home/abd/Desktop/Work/Metaflow/BSM-Search/code/generatetuple.py mc2 40000 /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc2_4.root
+[MFLOG|0|2022-02-19T17:40:47.346253Z|runtime|91368c3f-1b8f-444e-891d-7d3206a51376]    
+[MFLOG|0|2022-02-19T17:40:47.346941Z|runtime|67a3b4fd-dd5b-4c34-973f-e942b66cb0b8]The output is: 
+[MFLOG|0|2022-02-19T17:40:47.347616Z|runtime|789bf4d7-c6df-452b-a314-f9b4f37dcac3] /home/abd/Desktop/Work/Metaflow/BSM-Search
+[MFLOG|0|2022-02-19T17:40:47.348357Z|runtime|64489763-dc38-434d-850b-c82f193aad67]
+[MFLOG|0|2022-02-19T17:40:47.349147Z|runtime|1db91b7a-4b72-4524-a035-330c39b81fcc]Return Code: 0

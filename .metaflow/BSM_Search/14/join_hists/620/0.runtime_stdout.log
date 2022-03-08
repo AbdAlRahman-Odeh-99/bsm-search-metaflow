@@ -1,0 +1,12 @@
+[MFLOG|0|2022-02-19T16:59:47.196426Z|runtime|8dc351a0-8bc7-4d74-853e-ff79fa55c0a1]The command is: 
+[MFLOG|0|2022-02-19T16:59:49.797622Z|runtime|1c951274-ee95-42bc-9c3f-51f0442d6822] 
+[MFLOG|0|2022-02-19T16:59:49.798219Z|runtime|7383c9df-b657-41b1-9c5e-89f68cadbf68]        source /home/abd/root/root/bin/thisroot.sh        
+[MFLOG|0|2022-02-19T16:59:49.798710Z|runtime|81e65964-5a4a-4be2-ad60-cbccea764332]        hadd -f /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_nominal_hist.root
+[MFLOG|0|2022-02-19T16:59:49.799185Z|runtime|2ceab66c-34bc-4500-834c-aef989f248e5]    
+[MFLOG|0|2022-02-19T16:59:49.799657Z|runtime|9e39302d-1105-4391-b355-61a95e046ede]The output is: 
+[MFLOG|0|2022-02-19T16:59:49.800118Z|runtime|c3d33728-23b0-4832-af00-1e80e5f88474] hadd Target file: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_merged_hist.root
+[MFLOG|0|2022-02-19T16:59:49.800577Z|runtime|456218f7-60c5-43bb-9022-3c355d3c1f52]hadd compression setting for all output: 1
+[MFLOG|0|2022-02-19T16:59:49.801059Z|runtime|6a7137a4-0cbc-481a-a1fb-e5487f7b8696]hadd Source file 1: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_nominal_hist.root
+[MFLOG|0|2022-02-19T16:59:49.801628Z|runtime|07e3d7a8-f10b-4e83-9392-a082a6936383]hadd Target path: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_merged_hist.root:/
+[MFLOG|0|2022-02-19T16:59:49.802053Z|runtime|d77a3697-3870-419b-803b-1de137fcd3bf]
+[MFLOG|0|2022-02-19T16:59:49.802607Z|runtime|bc8ed346-d122-4d84-8b36-1895069df0ab]Return Code: 0

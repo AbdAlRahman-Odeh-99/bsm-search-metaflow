@@ -1,0 +1,17 @@
+[MFLOG|0|2022-02-19T16:20:40.690289Z|runtime|f7aaaa83-5a37-4b73-92b7-06c43fa06efa]The command is: 
+[MFLOG|0|2022-02-19T16:20:40.690561Z|runtime|7c3d6af7-a96e-46b2-aedf-defd40b893fb] 
+[MFLOG|0|2022-02-19T16:20:40.690724Z|runtime|1630c431-55b4-4186-b4c7-d8e730099072]        source /home/abd/root/root/bin/thisroot.sh        
+[MFLOG|0|2022-02-19T16:20:40.690878Z|runtime|ffdab282-2280-4e06-a49c-73cf9b37cfe8]        hadd -f /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc2_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/data_merged_hist.root
+[MFLOG|0|2022-02-19T16:20:40.691030Z|runtime|2cc31894-2935-487d-9e54-24e2d12d0c44]    
+[MFLOG|0|2022-02-19T16:20:40.691172Z|runtime|75e09512-c4c7-4529-b615-03af3a06a74e]The output is: 
+[MFLOG|0|2022-02-19T16:20:40.691916Z|runtime|dbbbd427-00af-4cc1-af9b-7255a36784f0] hadd Target file: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root
+[MFLOG|0|2022-02-19T16:20:40.694953Z|runtime|a3fdd73c-6bb7-4def-b4c2-fb05584f903b]hadd compression setting for all output: 1
+[MFLOG|0|2022-02-19T16:20:40.695667Z|runtime|3334eaaf-3fba-4df2-9552-135f458bf294]hadd Source file 1: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_merged_hist.root
+[MFLOG|0|2022-02-19T16:20:40.695906Z|runtime|d63ae7c0-89b4-45f9-b35e-11370eaa2640]
+[MFLOG|0|2022-02-19T16:20:40.696086Z|runtime|a92de8dc-d52f-41a2-9a77-acb7bffd8ea8]Return Code: 1
+[MFLOG|0|2022-02-19T16:20:43.417774Z|runtime|674dfb36-2d85-4165-858d-37d9f1706371]The error is: 
+[MFLOG|0|2022-02-19T16:20:43.419522Z|runtime|e7f81d65-d748-4087-8fd5-a9fada91951a] /bin/sh: 2: source: not found
+[MFLOG|0|2022-02-19T16:20:43.420630Z|runtime|a5574816-ee96-43a4-aea1-6093be85321c]Error in <TFile::TFile>: file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_merged_hist.root does not exist
+[MFLOG|0|2022-02-19T16:20:43.421737Z|runtime|810f159c-5327-468e-9a33-0b64a6ea7d40]Error in <TFileMerger::AddFile>: cannot open file /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_merged_hist.root
+[MFLOG|0|2022-02-19T16:20:43.422175Z|runtime|8bdf8673-f2d8-4a34-b7cf-9e12ede514d4]hadd exiting due to error in /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_merged_hist.root
+[MFLOG|0|2022-02-19T16:20:43.423677Z|runtime|441c65fc-94a4-4c24-8cad-8870523fbdab]

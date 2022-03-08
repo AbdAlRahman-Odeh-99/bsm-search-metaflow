@@ -18,5 +18,7 @@ go to: localhost:3000
 #Running flow with UI
 METAFLOW_SERVICE_URL=http://localhost:8080/ METAFLOW_DEFAULT_METADATA=service python3 bsm-search.py run
 
+python3 bms-search.py card view merge_hists
+
 
 

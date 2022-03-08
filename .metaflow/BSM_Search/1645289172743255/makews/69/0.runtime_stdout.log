@@ -1,0 +1,330 @@
+[MFLOG|0|2022-02-19T16:47:55.551037Z|runtime|39fb1139-8883-4b99-8d68-ab1b73e24d62]The command is: 
+[MFLOG|0|2022-02-19T16:47:55.551392Z|runtime|56a5d9b0-09a5-4963-9525-49142c309302] 
+[MFLOG|0|2022-02-19T16:47:55.551566Z|runtime|e98957a5-3ff1-4ceb-a73c-01f045551bf2]        source /home/abd/root/root/bin/thisroot.sh
+[MFLOG|0|2022-02-19T16:47:55.551713Z|runtime|c39644d0-7aea-4ff5-8774-63dee953b547]        python /home/abd/Desktop/Work/Metaflow/BSM-Search/code/makews.py /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/xmldir
+[MFLOG|0|2022-02-19T16:47:55.551864Z|runtime|756cc8b2-03b7-40e2-bd2a-dc1556e53c07]    
+[MFLOG|0|2022-02-19T16:47:55.552007Z|runtime|86286ad5-cce1-446a-b00e-dbd9f05b42c1]The output is: 
+[MFLOG|0|2022-02-19T16:47:55.552146Z|runtime|c17f27b5-f127-4352-b84d-1473ddf08947] 
+[MFLOG|0|2022-02-19T16:47:55.552281Z|runtime|8168a09e-f24c-489b-abe2-3d657798a6da][1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+[MFLOG|0|2022-02-19T16:47:55.552416Z|runtime|40cdad04-795c-49cc-b787-01aa40f8f7b3]                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+[MFLOG|0|2022-02-19T16:47:55.552547Z|runtime|46aae7c0-168a-44bd-aa7f-0bf06736d8dc]                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+[MFLOG|0|2022-02-19T16:47:55.552678Z|runtime|daca1e04-2816-4e75-89e4-ebe1d170ec53]
+[MFLOG|0|2022-02-19T16:47:55.552835Z|runtime|59474d5e-8b4d-4987-bbf8-d52b46afc3f5][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/data_nominal
+[MFLOG|0|2022-02-19T16:47:55.552980Z|runtime|a72afd1e-12a2-4c7e-9b52-64d06375bdf7][#2] INFO:HistFactory -- Opened input file: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root: 
+[MFLOG|0|2022-02-19T16:47:55.553119Z|runtime|a4702a9e-0e7a-40b2-9fc6-00efc9b7476b][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/signal_nominal
+[MFLOG|0|2022-02-19T16:47:55.553267Z|runtime|121c3184-002d-4353-a56b-ced6b0340c78][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/qcd_nominal
+[MFLOG|0|2022-02-19T16:47:55.553400Z|runtime|28a7dfbc-e6d1-43c2-971b-4a410a2c0ab9][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc1_nominal
+[MFLOG|0|2022-02-19T16:47:55.553531Z|runtime|a2ff63e4-e777-4d33-bb7c-8c35e6f916c6][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc1_weight_var1_dn
+[MFLOG|0|2022-02-19T16:47:55.553786Z|runtime|d88a8f10-49a6-4728-adf9-775f62b30931][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc1_weight_var1_up
+[MFLOG|0|2022-02-19T16:47:55.553960Z|runtime|b1b4e6f0-d3bb-4bc1-87aa-0b40890b9984][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc1_shape_conv_dn
+[MFLOG|0|2022-02-19T16:47:55.554099Z|runtime|0b4eb1cf-62b5-4131-bea1-ecd95ca601ae][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc1_shape_conv_up
+[MFLOG|0|2022-02-19T16:47:55.554234Z|runtime|46b5901a-cfb1-4ac4-961b-0860ff1dd807][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc2_nominal
+[MFLOG|0|2022-02-19T16:47:55.554368Z|runtime|404c93a7-ad6c-448b-81ee-3594feb52964][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc2_weight_var1_dn
+[MFLOG|0|2022-02-19T16:47:55.554513Z|runtime|3db3228c-8670-4250-b718-80910b664ccb][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc2_weight_var1_up
+[MFLOG|0|2022-02-19T16:47:55.554648Z|runtime|34e97df0-78cf-4330-bab0-a7f1b50747c0][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc2_shape_conv_dn
+[MFLOG|0|2022-02-19T16:47:55.554780Z|runtime|5b6a20c1-1157-4aa2-86c2-c9d05743345b][#2] PROGRESS:HistFactory -- Getting histogram /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/mc2_shape_conv_up
+[MFLOG|0|2022-02-19T16:47:55.554918Z|runtime|93af91ab-afe2-4a83-be7e-e5012c893042]Measurement Name: meas	 OutputFilePrefix: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results	 POI: SigXsecOverSM	 Lumi: 1	 LumiRelErr: 0.1	 BinLow: 0	 BinHigh: 1	 ExportOnly: 0
+[MFLOG|0|2022-02-19T16:47:55.555260Z|runtime|bbdca5ea-af3e-4808-ab5d-bef8cb529e8b]Channels:
+[MFLOG|0|2022-02-19T16:47:55.555464Z|runtime|d5f2cc82-72c2-4b8f-835d-077b1f5cc5eb]	 Channel Name: channel1	 InputFile: 
+[MFLOG|0|2022-02-19T16:47:55.555638Z|runtime|397ff386-5567-4169-adea-f90af5b64755]	 Data:
+[MFLOG|0|2022-02-19T16:47:55.555840Z|runtime|a3a4cbff-4f8d-4f79-b12a-1b3db7c5d5ad]	 	 InputFile: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root	 HistoName: data_nominal	 HistoPath: 	 HistoAddress: 0x558316221d70
+[MFLOG|0|2022-02-19T16:47:55.556034Z|runtime|7c58fcd5-baad-4b8c-a822-deab73b48bcb]	 statErrorConfig:
+[MFLOG|0|2022-02-19T16:47:55.556201Z|runtime|a62f778e-f408-43ba-b781-2e7a3d6b87d9]	 	 RelErrorThreshold: 0.05	 ConstraintType: Poisson
+[MFLOG|0|2022-02-19T16:47:55.556366Z|runtime|21577918-6e18-44e7-bd68-7c2c3fd7b4a4]	 Samples: 
+[MFLOG|0|2022-02-19T16:47:55.556521Z|runtime|5feff300-2c38-45c3-bb5a-a3aa7e78c592]	 	 Name: signal	 	 Channel: channel1	 NormalizeByTheory: True	 StatErrorActivate: False
+[MFLOG|0|2022-02-19T16:47:55.556702Z|runtime|c1a869ab-12b3-4ae8-861d-a1969cf467df]	 	 	 	 	 InputFile: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root	 HistName: signal_nominal	 HistoPath: 	 HistoAddress: 0x558316ee4030
+[MFLOG|0|2022-02-19T16:47:55.556926Z|runtime|cfa7c869-1ef6-4433-9858-db01cf7b7430]	 	 Name: qcd	 	 Channel: channel1	 NormalizeByTheory: True	 StatErrorActivate: False
+[MFLOG|0|2022-02-19T16:47:55.557156Z|runtime|515a8667-544c-4504-8412-f9880a2c067c]	 	 	 	 	 InputFile: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root	 HistName: qcd_nominal	 HistoPath: 	 HistoAddress: 0x558316ee4850
+[MFLOG|0|2022-02-19T16:47:55.557337Z|runtime|12caca66-b50a-4466-9fbb-8f3c5071d52b]	 	 Name: mc1	 	 Channel: channel1	 NormalizeByTheory: True	 StatErrorActivate: False
+[MFLOG|0|2022-02-19T16:47:55.557524Z|runtime|4e63355c-7195-4229-b699-f5adb08eb2ad]	 	 	 	 	 InputFile: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root	 HistName: mc1_nominal	 HistoPath: 	 HistoAddress: 0x558316ee51f0
+[MFLOG|0|2022-02-19T16:47:55.557701Z|runtime|beafc1e6-574c-4914-87a9-0cc028743040]	 	 Name: mc2	 	 Channel: channel1	 NormalizeByTheory: True	 StatErrorActivate: False
+[MFLOG|0|2022-02-19T16:47:55.557884Z|runtime|a878b768-36da-41e8-87e1-6e5b5d53d128]	 	 	 	 	 InputFile: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root	 HistName: mc2_nominal	 HistoPath: 	 HistoAddress: 0x558316f0a360
+[MFLOG|0|2022-02-19T16:47:55.558081Z|runtime|9c6426a6-a80a-4e91-8be9-1fd5281e11e3]	 End of Channel channel1
+[MFLOG|0|2022-02-19T16:47:55.558245Z|runtime|de0a4b4a-1258-4fc4-962f-a2e1a07698dd][#2] INFO:HistFactory -- End Measurement: meas
+[MFLOG|0|2022-02-19T16:47:55.558398Z|runtime|d6b6c351-2c92-480c-8721-c1f414beb49e][#2] PROGRESS:HistFactory -- Printing XML Files for measurement: meas
+[MFLOG|0|2022-02-19T16:47:55.558552Z|runtime|18dde5ae-b671-4058-8878-01e1b4c46116][#2] PROGRESS:HistFactory -- Printing XML Files for channel: channel1
+[MFLOG|0|2022-02-19T16:47:55.558801Z|runtime|bbbb7391-dc5e-416f-a599-5b46aca6b8f8][#2] PROGRESS:HistFactory -- Finished printing XML files
+[MFLOG|0|2022-02-19T16:47:55.558976Z|runtime|7716d946-5fe9-48a4-974e-94a0031c39a1][#2] PROGRESS:HistFactory -- Finished printing XML files
+[MFLOG|0|2022-02-19T16:47:55.559154Z|runtime|71d2450e-b429-4172-bdfc-f65b5e806920][#2] INFO:HistFactory -- Making Model and Measurements (Fast) for measurement: meas
+[MFLOG|0|2022-02-19T16:47:55.559316Z|runtime|d076ae76-f790-436e-9576-07d83e01017b][#2] INFO:HistFactory -- using lumi = 1 and lumiError = 0.1 including bins between 0 and 1
+[MFLOG|0|2022-02-19T16:47:55.559482Z|runtime|bd58ee6a-d51b-4a3e-86b3-f8217ee4a03b][#2] INFO:HistFactory -- fixing the following parameters:
+[MFLOG|0|2022-02-19T16:47:55.559638Z|runtime|bbbbd57a-a53c-467f-ac89-e643a97622e4][#2] INFO:HistFactory -- Creating the output file: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_meas.root
+[MFLOG|0|2022-02-19T16:47:55.559796Z|runtime|19da2954-421c-4d4a-b3d8-01fbdefccfed][#2] INFO:HistFactory -- Creating the table file: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_results.table
+[MFLOG|0|2022-02-19T16:47:55.559951Z|runtime|a6ff35b7-17b9-4ebb-9bf6-f795de89cffb][#2] INFO:HistFactory -- Creating the HistoToWorkspaceFactoryFast factory
+[MFLOG|0|2022-02-19T16:47:55.560099Z|runtime|4a0c3479-b12d-4a2f-bcb6-f5a17fc3c0f4][#2] INFO:HistFactory -- Setting preprocess functions
+[MFLOG|0|2022-02-19T16:47:55.560244Z|runtime|f27f2008-7b8c-41ee-8be2-6ef8fd1b8677][#2] PROGRESS:HistFactory -- Starting to process channel: channel1
+[MFLOG|0|2022-02-19T16:47:55.560391Z|runtime|8c8bbd27-08d6-4ffe-9c41-61e0a7936b45][#2] PROGRESS:HistFactory -- 
+[MFLOG|0|2022-02-19T16:47:55.560546Z|runtime|60c8ca5f-4fe8-4628-a098-71847a3402fa]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.560693Z|runtime|a94a9e63-2f24-4e2c-bf6e-ebb176ba8498]	Starting to process 'channel1' channel with 1 observables
+[MFLOG|0|2022-02-19T16:47:55.562093Z|runtime|178bd18d-7a9f-4027-8d98-fe9e530dc36d]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.562317Z|runtime|44af3c8e-db53-41ab-baf4-5ad1acf3cbf8]
+[MFLOG|0|2022-02-19T16:47:55.562481Z|runtime|3efd73a1-c70c-4cb0-aa88-57fc088ef247][#2] INFO:HistFactory -- lumi str = [1,0,10]
+[MFLOG|0|2022-02-19T16:47:55.562636Z|runtime|3ee65e69-1587-4ae4-b36b-33f6c818d75c][#2] INFO:HistFactory -- lumi Error str = nominalLumi[1,0,2],0.1
+[MFLOG|0|2022-02-19T16:47:55.562786Z|runtime|496893a3-1908-4434-ae87-d4cba3e0c1cd][#2] INFO:HistFactory -- making normFactor: SigXsecOverSM
+[MFLOG|0|2022-02-19T16:47:55.562937Z|runtime|24c7a1b3-bcf6-4c07-90c4-ab97f2161fa2][#2] INFO:HistFactory -- signal_channel1 has no variation histograms 
+[MFLOG|0|2022-02-19T16:47:55.563235Z|runtime|1603fe0a-5286-400a-bf60-e9d9b6fd83ab][#2] INFO:HistFactory -- processing hist signal_nominal
+[MFLOG|0|2022-02-19T16:47:55.563414Z|runtime|35e5f18e-8607-4708-a542-2763871c9263][#2] INFO:HistFactory -- qcd_channel1 has no variation histograms 
+[MFLOG|0|2022-02-19T16:47:55.563568Z|runtime|1252d57e-397e-433c-836d-7e7cb572585f][#2] INFO:HistFactory -- processing hist qcd_nominal
+[MFLOG|0|2022-02-19T16:47:55.563753Z|runtime|b036733e-03b5-432c-8328-c4e993496dea][#2] INFO:HistFactory -- Gaussian::alpha_mc1_weight_var1Constraint(alpha_mc1_weight_var1,nom_alpha_mc1_weight_var1[0.,-10,10],1.)
+[MFLOG|0|2022-02-19T16:47:55.563915Z|runtime|72ad69a2-9b56-4ecf-8b64-305b20261856][#2] INFO:HistFactory -- Gaussian::alpha_mc1_shape_convConstraint(alpha_mc1_shape_conv,nom_alpha_mc1_shape_conv[0.,-10,10],1.)
+[MFLOG|0|2022-02-19T16:47:55.564063Z|runtime|17305ded-fdd3-4eaa-9b8f-399d0e55bd97][#2] INFO:HistFactory -- Gaussian::alpha_mc2_weight_var1Constraint(alpha_mc2_weight_var1,nom_alpha_mc2_weight_var1[0.,-10,10],1.)
+[MFLOG|0|2022-02-19T16:47:55.564228Z|runtime|9f3879d2-a4eb-4cc1-acd9-6b1fc0bfbdd8][#2] INFO:HistFactory -- Gaussian::alpha_mc2_shape_convConstraint(alpha_mc2_shape_conv,nom_alpha_mc2_shape_conv[0.,-10,10],1.)
+[MFLOG|0|2022-02-19T16:47:55.564374Z|runtime|96e63e35-070b-422d-be88-9255b70ece52][#2] PROGRESS:HistFactory -- 
+[MFLOG|0|2022-02-19T16:47:55.564519Z|runtime|1808765b-fdba-442b-becb-3c2598edf89d]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.564661Z|runtime|160b057b-963a-4c8a-bc7e-a92ade7bcb72]	import model into workspace
+[MFLOG|0|2022-02-19T16:47:55.564824Z|runtime|4582425e-ff00-4b4b-b3c0-542a82b087e0]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.564966Z|runtime|af5f213a-3804-4d5e-a7a6-446a7e9c6438]
+[MFLOG|0|2022-02-19T16:47:55.565106Z|runtime|d53e9169-d151-4bdb-9f4f-cc27ee05a48a][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.565251Z|runtime|7eddbdd4-8e85-499c-91bc-a3f72883ce85]RooDataSet::AsimovData[obs_x_channel1,weight:binWeightAsimov] = 50 entries (12348.7 weighted)
+[MFLOG|0|2022-02-19T16:47:55.565464Z|runtime|827916ec-9154-4608-a452-e5a17a0bb2c6]
+[MFLOG|0|2022-02-19T16:47:55.565621Z|runtime|3ddcfb97-b40a-4b99-97ad-56e90cda8191]RooWorkspace(channel1) channel1 workspace contents
+[MFLOG|0|2022-02-19T16:47:55.565771Z|runtime|724caa4e-96f0-469e-a5e6-c53ba59c156d]
+[MFLOG|0|2022-02-19T16:47:55.565921Z|runtime|f2827588-012b-4eec-9ba6-cf2a566463fc]variables
+[MFLOG|0|2022-02-19T16:47:55.566079Z|runtime|3402a239-e619-47e0-88f2-5dacb85c1e8d]---------
+[MFLOG|0|2022-02-19T16:47:55.566228Z|runtime|bc6e776d-daef-461a-a1aa-e377fd5a5a7a](Lumi,SigXsecOverSM,alpha_mc1_shape_conv,alpha_mc1_weight_var1,alpha_mc2_shape_conv,alpha_mc2_weight_var1,binWidth_obs_x_channel1_0,binWidth_obs_x_channel1_1,binWidth_obs_x_channel1_2,binWidth_obs_x_channel1_3,nom_alpha_mc1_shape_conv,nom_alpha_mc1_weight_var1,nom_alpha_mc2_shape_conv,nom_alpha_mc2_weight_var1,nominalLumi,obs_x_channel1,weightVar)
+[MFLOG|0|2022-02-19T16:47:55.566562Z|runtime|3105aaa8-9654-4802-9e11-7137cf0dc361]
+[MFLOG|0|2022-02-19T16:47:55.566915Z|runtime|b15b8be3-2330-4e8a-b43f-625b1ef7e7a8]p.d.f.s
+[MFLOG|0|2022-02-19T16:47:55.589499Z|runtime|93aac9f3-7926-4a0d-9853-55cbcddeec12]-------
+[MFLOG|0|2022-02-19T16:47:55.589689Z|runtime|e5c42483-41bc-437d-bf57-c2ce8da140f9]RooGaussian::alpha_mc1_shape_convConstraint[ x=alpha_mc1_shape_conv mean=nom_alpha_mc1_shape_conv sigma=1 ] = 1
+[MFLOG|0|2022-02-19T16:47:55.589849Z|runtime|ba8a868e-7b7f-4bc1-aaef-b1c304ac0761]RooGaussian::alpha_mc1_weight_var1Constraint[ x=alpha_mc1_weight_var1 mean=nom_alpha_mc1_weight_var1 sigma=1 ] = 1
+[MFLOG|0|2022-02-19T16:47:55.590108Z|runtime|f1f5f7a6-8b5d-40dd-b9de-50a9d1059fa9]RooGaussian::alpha_mc2_shape_convConstraint[ x=alpha_mc2_shape_conv mean=nom_alpha_mc2_shape_conv sigma=1 ] = 1
+[MFLOG|0|2022-02-19T16:47:55.590300Z|runtime|2c4b3ac4-24d7-476b-a766-8f86cca1269c]RooGaussian::alpha_mc2_weight_var1Constraint[ x=alpha_mc2_weight_var1 mean=nom_alpha_mc2_weight_var1 sigma=1 ] = 1
+[MFLOG|0|2022-02-19T16:47:55.590470Z|runtime|1871cf9b-205c-4739-a7db-a590ee79d014]RooRealSumPdf::channel1_model[ binWidth_obs_x_channel1_0 * L_x_signal_channel1_overallSyst_x_Exp + binWidth_obs_x_channel1_1 * L_x_qcd_channel1_overallSyst_x_Exp + binWidth_obs_x_channel1_2 * L_x_mc1_channel1_overallSyst_x_HistSyst + binWidth_obs_x_channel1_3 * L_x_mc2_channel1_overallSyst_x_HistSyst ] = 1546.88/12348.7
+[MFLOG|0|2022-02-19T16:47:55.590711Z|runtime|aa6e9f44-741d-4419-ac25-2f53955bb672]RooGaussian::lumiConstraint[ x=Lumi mean=nominalLumi sigma=0.1 ] = 1
+[MFLOG|0|2022-02-19T16:47:55.590880Z|runtime|06dc58c9-e620-4ebc-85a7-9e34a341db25]RooProdPdf::model_channel1[ lumiConstraint * alpha_mc1_weight_var1Constraint * alpha_mc1_shape_convConstraint * alpha_mc2_weight_var1Constraint * alpha_mc2_shape_convConstraint * channel1_model(obs_x_channel1) ] = 1546.88
+[MFLOG|0|2022-02-19T16:47:55.591110Z|runtime|6de89ee8-7bbf-4e63-bfe0-0c9a8d1972dd]
+[MFLOG|0|2022-02-19T16:47:55.591288Z|runtime|966b98e1-4e6e-43f8-98c2-3eddf69fbee6]functions
+[MFLOG|0|2022-02-19T16:47:55.591512Z|runtime|9c3321df-2524-4005-88c0-866ae41211bf]--------
+[MFLOG|0|2022-02-19T16:47:55.591691Z|runtime|a9ea3f75-23d4-4fd2-9775-f5fc27ede116]RooProduct::L_x_mc1_channel1_overallSyst_x_HistSyst[ Lumi * mc1_channel1_overallSyst_x_HistSyst ] = 0
+[MFLOG|0|2022-02-19T16:47:55.597305Z|runtime|5ca4128b-e2f6-4c22-9d6e-813eb4090406]RooProduct::L_x_mc2_channel1_overallSyst_x_HistSyst[ Lumi * mc2_channel1_overallSyst_x_HistSyst ] = 0
+[MFLOG|0|2022-02-19T16:47:55.598019Z|runtime|02db6ce1-6127-47cb-87d3-28341bda6e38]RooProduct::L_x_qcd_channel1_overallSyst_x_Exp[ Lumi * qcd_channel1_overallSyst_x_Exp ] = 309.375
+[MFLOG|0|2022-02-19T16:47:55.599238Z|runtime|e100431b-1aa1-4939-a3a5-4d660bea602f]RooProduct::L_x_signal_channel1_overallSyst_x_Exp[ Lumi * signal_channel1_overallSyst_x_Exp ] = 0
+[MFLOG|0|2022-02-19T16:47:55.599875Z|runtime|6b074d9a-c6a2-4d98-b302-a303b78566d1]PiecewiseInterpolation::mc1_channel1_Hist_alpha[ ] = 0
+[MFLOG|0|2022-02-19T16:47:55.606629Z|runtime|4d00b75c-cb81-4791-a1d7-1688ca5a48cb]RooHistFunc::mc1_channel1_Hist_alpha_0high[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.608212Z|runtime|13568bd2-268e-4ba7-b92a-59318501017a]RooHistFunc::mc1_channel1_Hist_alpha_0low[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.610164Z|runtime|1fbbbc0d-d08c-46e4-a8b8-2ac3fe8b943c]RooHistFunc::mc1_channel1_Hist_alpha_1high[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.621297Z|runtime|61db7914-a1e3-4f11-ba2a-a2bae6c2cee5]RooHistFunc::mc1_channel1_Hist_alpha_1low[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.623146Z|runtime|91ac1fa0-16b0-4aae-a0f7-857735113ed3]RooHistFunc::mc1_channel1_Hist_alphanominal[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.625186Z|runtime|29e953cb-52fe-4d35-aea4-e06c3bc30b2c]RooProduct::mc1_channel1_overallSyst_x_HistSyst[ mc1_channel1_Hist_alpha * mc1_channel1_epsilon ] = 0
+[MFLOG|0|2022-02-19T16:47:55.631815Z|runtime|0f6cac1e-ad7a-40ed-80b6-ddd240c56a11]PiecewiseInterpolation::mc2_channel1_Hist_alpha[ ] = 0
+[MFLOG|0|2022-02-19T16:47:55.633607Z|runtime|d49a3d9a-7957-4b6b-bc08-ce26af1e4a5b]RooHistFunc::mc2_channel1_Hist_alpha_0high[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.637578Z|runtime|279c4e37-d89f-4d0d-a4f7-a3f48bc99af4]RooHistFunc::mc2_channel1_Hist_alpha_0low[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.641714Z|runtime|c02287ba-5d59-420f-a737-2d3e83fe4a54]RooHistFunc::mc2_channel1_Hist_alpha_1high[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.645005Z|runtime|50b548ba-7c6e-4277-a134-2d509ca1773e]RooHistFunc::mc2_channel1_Hist_alpha_1low[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.647789Z|runtime|eee600e7-81bc-4832-ba6e-2cccd431f826]RooHistFunc::mc2_channel1_Hist_alphanominal[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.651970Z|runtime|2f8c59f2-19b8-4d39-8388-199cae1c9477]RooProduct::mc2_channel1_overallSyst_x_HistSyst[ mc2_channel1_Hist_alpha * mc2_channel1_epsilon ] = 0
+[MFLOG|0|2022-02-19T16:47:55.654311Z|runtime|cc469806-e307-4e0d-9051-521357554bb5]RooHistFunc::qcd_channel1_nominal[ depList=(obs_x_channel1) ] = 309.375
+[MFLOG|0|2022-02-19T16:47:55.656195Z|runtime|a57fdc6c-3933-4e55-a899-eccd8ad495a7]RooProduct::qcd_channel1_overallSyst_x_Exp[ qcd_channel1_nominal * qcd_channel1_epsilon ] = 309.375
+[MFLOG|0|2022-02-19T16:47:55.658102Z|runtime|f8c09bc7-e5c4-4808-a7b2-2d5890a38c62]RooHistFunc::signal_channel1_nominal[ depList=(obs_x_channel1) ] = 0
+[MFLOG|0|2022-02-19T16:47:55.659656Z|runtime|df6ddb5d-548d-419d-a074-b2320d27601b]RooProduct::signal_channel1_overallNorm_x_sigma_epsilon[ SigXsecOverSM * signal_channel1_epsilon ] = 1
+[MFLOG|0|2022-02-19T16:47:55.661208Z|runtime|d2b1170e-8831-4fc7-8e29-d954674d1baa]RooProduct::signal_channel1_overallSyst_x_Exp[ signal_channel1_nominal * signal_channel1_overallNorm_x_sigma_epsilon ] = 0
+[MFLOG|0|2022-02-19T16:47:55.662767Z|runtime|7d28e8c8-4c0c-422f-82d5-8414aae5bec9]
+[MFLOG|0|2022-02-19T16:47:55.663224Z|runtime|e6a33621-81bd-4e66-a953-6ba54bc88bdc]datasets
+[MFLOG|0|2022-02-19T16:47:55.664391Z|runtime|497b11e4-73b3-4e96-a24a-87fa54f4b0b7]--------
+[MFLOG|0|2022-02-19T16:47:55.665076Z|runtime|8f4c08f6-cfa5-4a77-89da-0acf1150ba47]RooDataSet::asimovData(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.666418Z|runtime|c1145452-5020-4c2c-88bd-5bd7c7cd6bcf]RooDataSet::obsData(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.666862Z|runtime|c9cefda4-cc4f-4014-97e6-c6a251c72357]
+[MFLOG|0|2022-02-19T16:47:55.668726Z|runtime|af430357-f90b-406a-be05-67d731478c65]embedded datasets (in pdfs and functions)
+[MFLOG|0|2022-02-19T16:47:55.669088Z|runtime|cf570d80-6339-4675-ad75-8dfc33412b69]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.669464Z|runtime|f180eb21-8950-486b-b38b-7929ff3e27bc]RooDataHist::signal_channel1nominalDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.669711Z|runtime|defce82b-ffbb-48fe-a2af-6473b421b11f]RooDataHist::qcd_channel1nominalDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.669879Z|runtime|b35686ba-aae2-477c-9d83-8d44f8a14783]RooDataHist::mc1_channel1_Hist_alphanominalDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.670029Z|runtime|c16ce89c-6a99-4acb-8535-75e174b3778c]RooDataHist::mc1_channel1_Hist_alpha_0lowDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.670175Z|runtime|91dae5e4-afe9-4cb7-8334-ec945e9e1790]RooDataHist::mc1_channel1_Hist_alpha_1lowDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.670343Z|runtime|185ee614-ac22-4b8c-b881-7871dd821dff]RooDataHist::mc1_channel1_Hist_alpha_0highDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.670502Z|runtime|53477774-9318-485a-b103-b819a5774e6a]RooDataHist::mc1_channel1_Hist_alpha_1highDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.670642Z|runtime|bfd706a2-9433-40ce-a4c6-10ba3dd696df]RooDataHist::mc2_channel1_Hist_alphanominalDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.670798Z|runtime|9c2a62aa-5e02-4913-be9e-f276b39bdbac]RooDataHist::mc2_channel1_Hist_alpha_0lowDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.670956Z|runtime|930c62dc-004a-48f8-a57d-6d82b865a636]RooDataHist::mc2_channel1_Hist_alpha_1lowDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.671106Z|runtime|366f1fec-b218-4e10-8275-0e87b0231af5]RooDataHist::mc2_channel1_Hist_alpha_0highDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.671259Z|runtime|81232297-e5ca-4d5a-b895-abd235324e98]RooDataHist::mc2_channel1_Hist_alpha_1highDHist(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.671408Z|runtime|19d68c5a-28d8-4ad0-b15c-894c0f25297c]
+[MFLOG|0|2022-02-19T16:47:55.671560Z|runtime|a8cd659c-108d-4b32-bcf1-01f5545c7166]named sets
+[MFLOG|0|2022-02-19T16:47:55.671720Z|runtime|4516eeda-4ff3-44d8-962c-96ddaf2b39f7]----------
+[MFLOG|0|2022-02-19T16:47:55.671866Z|runtime|61e88396-7828-472e-b4fc-826490c8d7a2]ModelConfig_GlobalObservables:(nominalLumi,nom_alpha_mc1_weight_var1,nom_alpha_mc1_shape_conv,nom_alpha_mc2_weight_var1,nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.672013Z|runtime|0e1ae7df-fa50-43ff-9fff-dbad55689d7a]ModelConfig_Observables:(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.672162Z|runtime|2528e415-e860-49b8-86c4-1a42b701f6e2]coefList:(binWidth_obs_x_channel1_0,binWidth_obs_x_channel1_1,binWidth_obs_x_channel1_2,binWidth_obs_x_channel1_3)
+[MFLOG|0|2022-02-19T16:47:55.672310Z|runtime|e17c4918-b954-4901-b68f-c2a5759e1cc8]constraintTerms:(lumiConstraint,alpha_mc1_weight_var1Constraint,alpha_mc1_shape_convConstraint,alpha_mc2_weight_var1Constraint,alpha_mc2_shape_convConstraint)
+[MFLOG|0|2022-02-19T16:47:55.672464Z|runtime|a96138a9-c40a-45dd-a995-b5c4da80f94f]globalObservables:(nominalLumi,nom_alpha_mc1_weight_var1,nom_alpha_mc1_shape_conv,nom_alpha_mc2_weight_var1,nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.672614Z|runtime|049fb079-5d69-468d-b0c8-68f10788c61b]likelihoodTerms:(channel1_model)
+[MFLOG|0|2022-02-19T16:47:55.672759Z|runtime|b2559e29-d7bf-4899-85ec-6a1a0186e735]obsAndWeight:(weightVar,obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.672921Z|runtime|1f818b9a-9a37-4c3d-bac0-3a2089b528b7]observables:(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.673067Z|runtime|016c3784-9553-4fad-8020-e86225fcb28f]observablesSet:(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.673210Z|runtime|de785eda-1b78-488e-a4db-10d50e0278de]shapeList:(L_x_signal_channel1_overallSyst_x_Exp,L_x_qcd_channel1_overallSyst_x_Exp,L_x_mc1_channel1_overallSyst_x_HistSyst,L_x_mc2_channel1_overallSyst_x_HistSyst)
+[MFLOG|0|2022-02-19T16:47:55.673355Z|runtime|6c6fa5b3-fae7-4af4-8d37-ce5d08976907]
+[MFLOG|0|2022-02-19T16:47:55.673501Z|runtime|2ef6d9a6-f0f7-416b-a165-aba1b2f004a3]generic objects
+[MFLOG|0|2022-02-19T16:47:55.673644Z|runtime|ffc73b7a-8269-48b0-92a5-eb43516759c7]---------------
+[MFLOG|0|2022-02-19T16:47:55.673785Z|runtime|d938255b-54f4-41d2-9a82-6a6f2863338b]RooStats::ModelConfig::ModelConfig
+[MFLOG|0|2022-02-19T16:47:55.673928Z|runtime|0ef54fbf-0b28-480b-a9e2-a57c8b977237]
+[MFLOG|0|2022-02-19T16:47:55.674073Z|runtime|1a6cd2d1-579b-481c-afa2-f79e36458709][#2] INFO:HistFactory -- Setting Parameter(s) of Interest as: SigXsecOverSM 
+[MFLOG|0|2022-02-19T16:47:55.674230Z|runtime|aaca74e9-ecb9-455d-a84e-0bca9483f5ad]
+[MFLOG|0|2022-02-19T16:47:55.674388Z|runtime|ff6959f8-93b9-484f-b4d6-10ad23284070]=== Using the following for ModelConfig ===
+[MFLOG|0|2022-02-19T16:47:55.674538Z|runtime|23590614-1f10-447d-af42-16edcef43ee2]Observables:             RooArgSet:: = (obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.674694Z|runtime|f9f21a56-6438-404b-80fd-ef2a80883b90]Parameters of Interest:  RooArgSet:: = (SigXsecOverSM)
+[MFLOG|0|2022-02-19T16:47:55.674870Z|runtime|83fac092-ad45-4f4c-b9df-c5538c4264c8]Nuisance Parameters:     RooArgSet:: = (Lumi,alpha_mc1_shape_conv,alpha_mc1_weight_var1,alpha_mc2_shape_conv,alpha_mc2_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.675856Z|runtime|4b081371-1a3c-4396-a3f9-03467c632389]Global Observables:      RooArgSet:: = (nominalLumi,nom_alpha_mc1_weight_var1,nom_alpha_mc1_shape_conv,nom_alpha_mc2_weight_var1,nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.676070Z|runtime|c47a4dc8-8443-431d-8eb3-70c3d3b870b8]PDF:                     RooProdPdf::model_channel1[ lumiConstraint * alpha_mc1_weight_var1Constraint * alpha_mc1_shape_convConstraint * alpha_mc2_weight_var1Constraint * alpha_mc2_shape_convConstraint * channel1_model(obs_x_channel1) ] = 1546.88
+[MFLOG|0|2022-02-19T16:47:55.676764Z|runtime|c050a25b-87d4-4b91-87bb-000bde1fa0ef]
+[MFLOG|0|2022-02-19T16:47:55.676976Z|runtime|11744866-08e3-4ea9-ab72-fe257fee52cb][#2] INFO:HistFactory -- Opening File to hold channel: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_channel1_meas_model.root
+[MFLOG|0|2022-02-19T16:47:55.677623Z|runtime|f6cc94a2-6a6c-4c31-b8f6-92c9751f9dd6][#2] INFO:HistFactory -- About to write channel measurement to file
+[MFLOG|0|2022-02-19T16:47:55.677875Z|runtime|21f26597-eb51-4694-b172-507f699f8176][#2] PROGRESS:HistFactory -- Writing sample: signal
+[MFLOG|0|2022-02-19T16:47:55.678149Z|runtime|5f9b2fd7-9a0b-4372-a544-3306f12f068d][#2] PROGRESS:HistFactory -- Writing sample: qcd
+[MFLOG|0|2022-02-19T16:47:55.678318Z|runtime|6804f964-11d2-4b61-b385-023afeec3b7f][#2] PROGRESS:HistFactory -- Writing sample: mc1
+[MFLOG|0|2022-02-19T16:47:55.678453Z|runtime|8426c80a-0c6e-4208-908c-ac1414a54d3c][#2] PROGRESS:HistFactory -- Writing sample: mc2
+[MFLOG|0|2022-02-19T16:47:55.678593Z|runtime|50f33d38-0957-4a59-927b-fb8adcdd1a73][#2] PROGRESS:HistFactory -- Saved all histograms
+[MFLOG|0|2022-02-19T16:47:55.678841Z|runtime|70f4b9f9-fc90-4da0-a9b8-85181c498b0f][#2] PROGRESS:HistFactory -- Saved Measurement
+[MFLOG|0|2022-02-19T16:47:55.679499Z|runtime|3a40a73e-7298-4fdd-ac6d-f8b89f42f70b][#2] PROGRESS:HistFactory -- Successfully wrote channel to file
+[MFLOG|0|2022-02-19T16:47:55.679694Z|runtime|aec04349-6419-4a14-b6ea-dd6962c93ce1][#2] PROGRESS:HistFactory -- 
+[MFLOG|0|2022-02-19T16:47:55.679855Z|runtime|1db74e81-be88-4a56-ae36-4f0d365cb2fd]---------------
+[MFLOG|0|2022-02-19T16:47:55.680001Z|runtime|60a306a4-e20c-413c-a888-515a33f557b5]Doing channel1 Fit
+[MFLOG|0|2022-02-19T16:47:55.680139Z|runtime|f3f91595-3b6a-495f-b7ed-ace65d7459c2]---------------
+[MFLOG|0|2022-02-19T16:47:55.680276Z|runtime|42971654-f03b-4b3f-a562-8358ba103db3]
+[MFLOG|0|2022-02-19T16:47:55.680417Z|runtime|8061be19-b49b-490f-ae3b-96e70de05e0c]
+[MFLOG|0|2022-02-19T16:47:55.680563Z|runtime|57aba9f8-fff6-4718-b405-c2289a0b33a0][#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[MFLOG|0|2022-02-19T16:47:55.680701Z|runtime|e9544141-588c-42bf-a4ea-e3197ce1a454][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.680851Z|runtime|7c28a6e3-ef84-478c-a8c6-28802f77f3bb][#1] INFO:Minization -- createNLL: caching constraint set under name CONSTR_OF_PDF_model_channel1_FOR_OBS_obs_x_channel1 with 5 entries
+[MFLOG|0|2022-02-19T16:47:55.680999Z|runtime|970e77ec-4236-4cbd-8f1c-536265ed427d][#1] INFO:Minization --  Including the following constraint terms in minimization: (lumiConstraint,alpha_mc1_weight_var1Constraint,alpha_mc1_shape_convConstraint,alpha_mc2_weight_var1Constraint,alpha_mc2_shape_convConstraint)
+[MFLOG|0|2022-02-19T16:47:55.681148Z|runtime|852f1b29-edd6-4dee-88b5-01e3dc7b1f4a][#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_model_channel1_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[MFLOG|0|2022-02-19T16:47:55.681284Z|runtime|95500738-2ba6-4d6c-a17e-312178f20095][#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[MFLOG|0|2022-02-19T16:47:55.681425Z|runtime|020728f4-bd9b-4125-b62a-ff207a81d5c6][#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (signal_channel1_nominal,qcd_channel1_overallSyst_x_Exp,mc1_channel1_Hist_alphanominal,mc1_channel1_Hist_alpha_0low,mc1_channel1_Hist_alpha_1low,mc1_channel1_Hist_alpha_0high,mc1_channel1_Hist_alpha_1high,mc2_channel1_Hist_alphanominal,mc2_channel1_Hist_alpha_0low,mc2_channel1_Hist_alpha_1low,mc2_channel1_Hist_alpha_0high,mc2_channel1_Hist_alpha_1high)
+[MFLOG|0|2022-02-19T16:47:55.681578Z|runtime|24bd1d60-0670-4713-8df5-d4ac29978045][#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (mc1_channel1_Hist_alpha,mc2_channel1_Hist_alpha)
+[MFLOG|0|2022-02-19T16:47:55.681720Z|runtime|e87f0b1a-b586-438f-823c-633dbc940aad][#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[MFLOG|0|2022-02-19T16:47:55.681866Z|runtime|8c001c57-18bf-4a70-bc5e-8e8733e4415e][#2] INFO:HistFactory -- printing results for SigXsecOverSM at 0.418452 high -0.284459 low 0.285084
+[MFLOG|0|2022-02-19T16:47:55.682010Z|runtime|1eb7139f-c9ff-48c9-875d-f2360f6f4bb2][#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[MFLOG|0|2022-02-19T16:47:55.682158Z|runtime|465c141f-1917-4f6d-84f7-cc11dfe6bb61][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.682304Z|runtime|ea85ee7f-b71d-4491-be22-6c35b2a99a51][#1] INFO:Minization -- createNLL picked up cached constraints from workspace with 5 entries
+[MFLOG|0|2022-02-19T16:47:55.682451Z|runtime|d2394ddf-131c-4878-b89a-1dd2de1ebdb4][#1] INFO:Minization --  Including the following constraint terms in minimization: (lumiConstraint,alpha_mc1_weight_var1Constraint,alpha_mc1_shape_convConstraint,alpha_mc2_weight_var1Constraint,alpha_mc2_shape_convConstraint)
+[MFLOG|0|2022-02-19T16:47:55.682598Z|runtime|812de5fc-edef-4509-873f-40dc02b4dfe6][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.682766Z|runtime|4aa7b29a-8e12-4b2d-99e6-d48e94febc0d][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.682904Z|runtime|951e4f14-e1f3-4f8a-9fd8-80d521902a59][#1] INFO:NumericIntegration -- RooRealIntegral::init(lumiConstraint_Int[Lumi,nominalLumi]) using numeric integrator RooIntegrator1D to calculate Int(nominalLumi)
+[MFLOG|0|2022-02-19T16:47:55.683058Z|runtime|2db4ffe7-2c3c-4b62-91e4-841b830a3cce][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_weight_var1Constraint_Int[alpha_mc1_weight_var1,nom_alpha_mc1_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.683206Z|runtime|1bd41549-68bc-4b8d-8f1d-ee84d5e770f5][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_shape_convConstraint_Int[alpha_mc1_shape_conv,nom_alpha_mc1_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.683347Z|runtime|f5494b19-b04b-442e-ab75-04be75d7cca5][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_weight_var1Constraint_Int[alpha_mc2_weight_var1,nom_alpha_mc2_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.683487Z|runtime|7471a28c-9c53-47bb-b9c1-7b2ddec80914][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_shape_convConstraint_Int[alpha_mc2_shape_conv,nom_alpha_mc2_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.683632Z|runtime|0b9c4b0a-44fe-49a0-9496-7339c996ec9f][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.683776Z|runtime|c97ba53e-149d-4181-918c-c23a36d3f25b][#1] INFO:Minization -- RooProfileLL::evaluate(nll_model_channel1_obsData_with_constr_Profile[SigXsecOverSM]) Creating instance of MINUIT
+[MFLOG|0|2022-02-19T16:47:55.683919Z|runtime|60d4a349-bc33-473d-85fe-24d9d5c86b71][#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_model_channel1_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[MFLOG|0|2022-02-19T16:47:55.684058Z|runtime|9ba64be7-4fe1-42a9-a7ad-7d545fd5aec0][#1] INFO:Minization -- RooProfileLL::evaluate(nll_model_channel1_obsData_with_constr_Profile[SigXsecOverSM]) determining minimum likelihood for current configurations w.r.t all observable
+[MFLOG|0|2022-02-19T16:47:55.684198Z|runtime|187c1563-f79b-461e-a79b-41cef79ce18f][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.684342Z|runtime|cad4f95d-31a2-4d8d-a2d2-61fe63fc12b7][#1] INFO:NumericIntegration -- RooRealIntegral::init(lumiConstraint_Int[Lumi,nominalLumi]) using numeric integrator RooIntegrator1D to calculate Int(nominalLumi)
+[MFLOG|0|2022-02-19T16:47:55.684482Z|runtime|6de34f65-d64f-4313-adb9-2b88039c5c5e][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_weight_var1Constraint_Int[alpha_mc1_weight_var1,nom_alpha_mc1_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.684625Z|runtime|87e497ae-35a7-42cb-abc1-7850304dd38c][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_shape_convConstraint_Int[alpha_mc1_shape_conv,nom_alpha_mc1_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.684779Z|runtime|d3a09504-8d18-4ae7-baf1-7c9992f708b6][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_weight_var1Constraint_Int[alpha_mc2_weight_var1,nom_alpha_mc2_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.684941Z|runtime|4f241e3e-1e3c-40e6-8dfe-79f57f6a909b][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_shape_convConstraint_Int[alpha_mc2_shape_conv,nom_alpha_mc2_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.687040Z|runtime|db95afd4-989c-430b-996e-a54b780663f9][#1] INFO:Minization -- RooProfileLL::evaluate(nll_model_channel1_obsData_with_constr_Profile[SigXsecOverSM]) minimum found at (SigXsecOverSM=0.417865)
+[MFLOG|0|2022-02-19T16:47:55.687262Z|runtime|d63782d9-3106-4e6f-94cb-311db5bdaa3a]..........................................................................................................................................................................................................
+[MFLOG|0|2022-02-19T16:47:55.688044Z|runtime|2ea3bfe2-d718-4123-bed8-691308503b95][#1] INFO:NumericIntegration -- RooRealIntegral::init(lumiConstraint_Int[Lumi,nominalLumi]) using numeric integrator RooIntegrator1D to calculate Int(nominalLumi)
+[MFLOG|0|2022-02-19T16:47:55.689707Z|runtime|f70df2cf-8638-47dd-bf34-d422dfbf65ce][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_weight_var1Constraint_Int[alpha_mc1_weight_var1,nom_alpha_mc1_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.693423Z|runtime|b9ad095d-933a-46c4-96ea-2860c563499b][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_shape_convConstraint_Int[alpha_mc1_shape_conv,nom_alpha_mc1_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.697616Z|runtime|21a288bf-034a-4152-a420-cbb0eeea7c1c][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_weight_var1Constraint_Int[alpha_mc2_weight_var1,nom_alpha_mc2_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.700705Z|runtime|bf11fc55-62a6-4dcc-a347-adf419c1d885][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_shape_convConstraint_Int[alpha_mc2_shape_conv,nom_alpha_mc2_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.708239Z|runtime|a1b4ab23-fd9e-4ef8-a21e-1b55807586fc][#2] INFO:HistFactory -- full list of observables:
+[MFLOG|0|2022-02-19T16:47:55.710245Z|runtime|7a4fc49a-4bd9-4786-9435-b701b6fa8f51][#2] INFO:HistFactory -- (obs_x_channel1)[#2] PROGRESS:HistFactory -- 
+[MFLOG|0|2022-02-19T16:47:55.712063Z|runtime|24d90d89-ec01-43b3-9c9b-e0ba80b977f6]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.713993Z|runtime|3c26a348-3267-4888-afee-f83fd51b64c1]	Entering combination
+[MFLOG|0|2022-02-19T16:47:55.718124Z|runtime|5c2e2065-36d8-4d75-948d-3c207624fa28]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.719985Z|runtime|59a2e80d-95b0-4981-a795-6c6bd6c912a6]
+[MFLOG|0|2022-02-19T16:47:55.721952Z|runtime|e1b604c0-3592-4b02-94c1-a4b5cccb528c][#2] PROGRESS:HistFactory -- 
+[MFLOG|0|2022-02-19T16:47:55.728827Z|runtime|c59c01b6-3ee6-4d6d-b72e-eb7d8b2bcc4f]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.731213Z|runtime|c0c6221b-b177-41b9-9ae1-9168fe4c87ea]	create toy data for channelCat[channel1]
+[MFLOG|0|2022-02-19T16:47:55.733236Z|runtime|5aadc69d-eba8-4dd5-b431-a4992d8b9249]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.735126Z|runtime|c39534d0-a76a-4aa1-adbc-41639b900f22]
+[MFLOG|0|2022-02-19T16:47:55.736412Z|runtime|4be3219b-64a1-4604-90dc-a49dd4cb0da3]RooDataSet::AsimovData0[obs_x_channel1,channelCat,weight:binWeightAsimov] = 50 entries (12348.7 weighted)
+[MFLOG|0|2022-02-19T16:47:55.737139Z|runtime|613b7b9c-32ab-43c4-b421-fbceb436d7a7][#2] PROGRESS:HistFactory -- Merging data for channel channel1
+[MFLOG|0|2022-02-19T16:47:55.738132Z|runtime|80d5f623-44a8-4790-9700-75a41888d5f0]
+[MFLOG|0|2022-02-19T16:47:55.739485Z|runtime|c94099ce-d94d-4b20-85ac-d42e53cbd689]RooWorkspace(combined) combined contents
+[MFLOG|0|2022-02-19T16:47:55.740029Z|runtime|37cfa278-152f-4b91-85b4-12dbb77c6436]
+[MFLOG|0|2022-02-19T16:47:55.741373Z|runtime|f6e8c532-55df-4ed9-a2cf-376694235358]variables
+[MFLOG|0|2022-02-19T16:47:55.741872Z|runtime|7f93cf59-51d7-48e1-955a-b73e6ac44459]---------
+[MFLOG|0|2022-02-19T16:47:55.743724Z|runtime|b86b876f-fa3b-49e7-bae3-21712f382bdb](channelCat,nom_alpha_mc1_shape_conv,nom_alpha_mc1_weight_var1,nom_alpha_mc2_shape_conv,nom_alpha_mc2_weight_var1,nominalLumi,obs_x_channel1,weightVar)
+[MFLOG|0|2022-02-19T16:47:55.750046Z|runtime|162ad6d8-5e6a-4086-9de1-ba4cd8747a0d]
+[MFLOG|0|2022-02-19T16:47:55.750314Z|runtime|89896970-ccba-4507-833c-e1d4d178fe3f]datasets
+[MFLOG|0|2022-02-19T16:47:55.750479Z|runtime|d16d6033-f4ef-41a5-bc73-1051e66bf0b4]--------
+[MFLOG|0|2022-02-19T16:47:55.750632Z|runtime|3ad860dd-f73a-4c78-b918-6e582ad312a8]RooDataSet::asimovData(obs_x_channel1,weightVar,channelCat)
+[MFLOG|0|2022-02-19T16:47:55.750788Z|runtime|f8271ea3-af44-4baf-90c7-f21a423462ea]RooDataSet::obsData(channelCat,obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.750972Z|runtime|fef866b8-6695-4b02-9f39-80755df18130]
+[MFLOG|0|2022-02-19T16:47:55.751140Z|runtime|d21fdc01-35f1-43e5-93af-930f92f2dbe4]named sets
+[MFLOG|0|2022-02-19T16:47:55.751275Z|runtime|3dbe708e-737f-4049-b4ae-ac10f8c35ab9]----------
+[MFLOG|0|2022-02-19T16:47:55.751407Z|runtime|3b88c39b-9f69-4f77-85d3-946d4ac3ef63]ModelConfig_GlobalObservables:(nominalLumi,nom_alpha_mc1_weight_var1,nom_alpha_mc1_shape_conv,nom_alpha_mc2_weight_var1,nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.751541Z|runtime|725b7b28-995f-4a80-b2f8-adc582d23dfe]ModelConfig_Observables:(obs_x_channel1,weightVar,channelCat)
+[MFLOG|0|2022-02-19T16:47:55.751673Z|runtime|7c5b0691-3321-48db-8816-0ff07300fce3]globalObservables:(nominalLumi,nom_alpha_mc1_weight_var1,nom_alpha_mc1_shape_conv,nom_alpha_mc2_weight_var1,nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.751798Z|runtime|e9d9888d-202a-4adf-b3a0-893374306ad5]observables:(obs_x_channel1,weightVar,channelCat)
+[MFLOG|0|2022-02-19T16:47:55.759037Z|runtime|09f23c57-4202-45d7-8110-e113b6110567]
+[MFLOG|0|2022-02-19T16:47:55.760727Z|runtime|f90b822e-427a-4407-b58a-fdb49cc13636][#2] PROGRESS:HistFactory -- 
+[MFLOG|0|2022-02-19T16:47:55.762487Z|runtime|20c9160b-b384-4dc7-9c8e-33366c2ffc79]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.764269Z|runtime|40c99c88-becd-4d17-8cd6-a79396958759]	Importing combined model
+[MFLOG|0|2022-02-19T16:47:55.769342Z|runtime|ad6af70c-40ce-42ba-ac7f-756a7e0ad8f8]-----------------------------------------
+[MFLOG|0|2022-02-19T16:47:55.771213Z|runtime|7ca85afb-bac6-41ff-bdc7-4955d1c191a7]
+[MFLOG|0|2022-02-19T16:47:55.773415Z|runtime|8812f4d4-99b0-4349-a718-88d7d868ceeb][#2] INFO:HistFactory -- Setting Parameter(s) of Interest as: SigXsecOverSM 
+[MFLOG|0|2022-02-19T16:47:55.775699Z|runtime|0470dbaf-782e-4e27-8152-68f587e7cc6f]
+[MFLOG|0|2022-02-19T16:47:55.777801Z|runtime|97050d1a-8079-4c46-861e-a78603aecca4]=== Using the following for ModelConfig ===
+[MFLOG|0|2022-02-19T16:47:55.781637Z|runtime|75b4c1b2-c92f-4e68-84d5-aeb46458d90a]Observables:             RooArgSet:: = (obs_x_channel1,weightVar,channelCat)
+[MFLOG|0|2022-02-19T16:47:55.784313Z|runtime|852a104a-d6c5-4dc9-9d7a-1043ebe6d229]Parameters of Interest:  RooArgSet:: = (SigXsecOverSM)
+[MFLOG|0|2022-02-19T16:47:55.785141Z|runtime|094fda46-cc17-4108-8c68-292a34b3bc24]Nuisance Parameters:     RooArgSet:: = (Lumi,alpha_mc1_shape_conv,alpha_mc1_weight_var1,alpha_mc2_shape_conv,alpha_mc2_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.786282Z|runtime|c77e6f53-e8d9-4128-a183-113890eec1a2]Global Observables:      RooArgSet:: = (nominalLumi,nom_alpha_mc1_weight_var1,nom_alpha_mc1_shape_conv,nom_alpha_mc2_weight_var1,nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.787636Z|runtime|b98061a3-2128-405c-a7f3-90c3316f80e5]PDF:                     RooSimultaneous::simPdf[ indexCat=channelCat channel1=model_channel1 ] = 1546.88
+[MFLOG|0|2022-02-19T16:47:55.788137Z|runtime|215bc2d9-430e-4799-8d32-37c3304ddd9f]
+[MFLOG|0|2022-02-19T16:47:55.788568Z|runtime|06adf8aa-b502-4735-b8be-ed93394eb005][#2] PROGRESS:HistFactory -- Writing combined workspace to file: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root
+[MFLOG|0|2022-02-19T16:47:55.795125Z|runtime|c9ab9db1-551c-40a6-9428-5479a4c3d2de][#2] PROGRESS:HistFactory -- Writing combined measurement to file: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/results_combined_meas_model.root
+[MFLOG|0|2022-02-19T16:47:55.797827Z|runtime|867cdff8-0078-45a5-a8f6-0999d2c27655][#2] PROGRESS:HistFactory -- Writing sample: signal
+[MFLOG|0|2022-02-19T16:47:55.798610Z|runtime|c2f45970-8f21-476f-800b-1137e6bf7a63][#2] PROGRESS:HistFactory -- Writing sample: qcd
+[MFLOG|0|2022-02-19T16:47:55.802276Z|runtime|af32aa79-5e5e-4882-8325-8938806cf502][#2] PROGRESS:HistFactory -- Writing sample: mc1
+[MFLOG|0|2022-02-19T16:47:55.802837Z|runtime|6f943d9b-c5f1-4c6b-9cfd-cc88441928b0][#2] PROGRESS:HistFactory -- Writing sample: mc2
+[MFLOG|0|2022-02-19T16:47:55.804198Z|runtime|56294fc8-0d69-4757-9b45-1b0f426a3001][#2] PROGRESS:HistFactory -- Saved all histograms
+[MFLOG|0|2022-02-19T16:47:55.804707Z|runtime|9598299f-68c5-4669-b6e9-ffa824ceb0e3][#2] PROGRESS:HistFactory -- Saved Measurement
+[MFLOG|0|2022-02-19T16:47:55.808533Z|runtime|9dccd315-46e7-421f-868f-17a961c459e4][#2] PROGRESS:HistFactory -- 
+[MFLOG|0|2022-02-19T16:47:55.808948Z|runtime|d19a242b-0b6a-4ca1-9a6b-1a450be2a986]---------------
+[MFLOG|0|2022-02-19T16:47:55.809125Z|runtime|74b308c3-a245-471c-908b-75bd920466ff]Doing combined Fit
+[MFLOG|0|2022-02-19T16:47:55.810101Z|runtime|b29e0ae8-548d-42fe-a56d-bada17b65af7]---------------
+[MFLOG|0|2022-02-19T16:47:55.810492Z|runtime|d89970ac-395d-4ca0-9d40-b333069b58dd]
+[MFLOG|0|2022-02-19T16:47:55.810685Z|runtime|c7a8d3e7-000e-4423-ad39-377725e90354]
+[MFLOG|0|2022-02-19T16:47:55.810810Z|runtime|e37fda24-b76b-4bcc-bcb7-faccc2d6ff26][#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[MFLOG|0|2022-02-19T16:47:55.810932Z|runtime|5cdd3022-f54f-4d33-bc26-1362819e122b][#1] INFO:Minization -- createNLL: caching constraint set under name CONSTR_OF_PDF_simPdf_FOR_OBS_channelCat:obs_x_channel1 with 5 entries
+[MFLOG|0|2022-02-19T16:47:55.811054Z|runtime|4e0b79ff-b0c5-436f-9c7c-cd3190b6a0f1][#1] INFO:Minization --  Including the following constraint terms in minimization: (lumiConstraint,alpha_mc1_weight_var1Constraint,alpha_mc1_shape_convConstraint,alpha_mc2_weight_var1Constraint,alpha_mc2_shape_convConstraint)
+[MFLOG|0|2022-02-19T16:47:55.811180Z|runtime|72ed3d75-22bf-4715-adcc-6a4e709ed28e][#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[MFLOG|0|2022-02-19T16:47:55.811304Z|runtime|13d0ad49-6168-4432-9737-454a0cf6dd7e][#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[MFLOG|0|2022-02-19T16:47:55.811426Z|runtime|839c7da1-982b-436b-aa29-061043ffd1d4]RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state channel1 (50 dataset entries)
+[MFLOG|0|2022-02-19T16:47:55.811548Z|runtime|1ab68220-2e63-4d70-a092-1ade6c3f0720][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.811670Z|runtime|2dc53edb-f75c-4235-b441-c1c9c53f36f7][#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 1 slave calculators.
+[MFLOG|0|2022-02-19T16:47:55.811790Z|runtime|bb21e025-4fe7-403b-802f-e4f01df37771][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.811923Z|runtime|92e9e96e-7e94-4892-a042-a1ac0800455c][#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (signal_channel1_nominal,qcd_channel1_overallSyst_x_Exp,mc1_channel1_Hist_alphanominal,mc1_channel1_Hist_alpha_0low,mc1_channel1_Hist_alpha_1low,mc1_channel1_Hist_alpha_0high,mc1_channel1_Hist_alpha_1high,mc2_channel1_Hist_alphanominal,mc2_channel1_Hist_alpha_0low,mc2_channel1_Hist_alpha_1low,mc2_channel1_Hist_alpha_0high,mc2_channel1_Hist_alpha_1high)
+[MFLOG|0|2022-02-19T16:47:55.814612Z|runtime|a06835f0-d81f-4a88-8a04-e697d98cb178][#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (mc1_channel1_Hist_alpha,mc2_channel1_Hist_alpha)
+[MFLOG|0|2022-02-19T16:47:55.816512Z|runtime|c3f10f04-5053-4596-bbcf-e4c76cb6e50b][#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[MFLOG|0|2022-02-19T16:47:55.817750Z|runtime|b4ace23b-133a-4ef6-baa1-17e76be6b9e4][#2] INFO:HistFactory -- printing results for SigXsecOverSM at 0.418452 high -0.284459 low 0.285084
+[MFLOG|0|2022-02-19T16:47:55.818751Z|runtime|26bf896b-ee54-49f8-a13f-9ad60e2406ed][#1] INFO:Minization -- p.d.f. provides expected number of events, including extended term in likelihood.
+[MFLOG|0|2022-02-19T16:47:55.819551Z|runtime|bd6c4f92-07b4-4c6c-9e38-123e9febd942][#1] INFO:Minization -- createNLL picked up cached constraints from workspace with 5 entries
+[MFLOG|0|2022-02-19T16:47:55.820448Z|runtime|cd5cd613-c7bf-4a6c-bd17-4f5ba85ced2d][#1] INFO:Minization --  Including the following constraint terms in minimization: (lumiConstraint,alpha_mc1_weight_var1Constraint,alpha_mc1_shape_convConstraint,alpha_mc2_weight_var1Constraint,alpha_mc2_shape_convConstraint)
+[MFLOG|0|2022-02-19T16:47:55.821480Z|runtime|e25f8c96-09c9-4b2a-a265-2744075ecebc]RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state channel1 (50 dataset entries)
+[MFLOG|0|2022-02-19T16:47:55.822519Z|runtime|49634102-0305-43b4-b6cb-aae849c0a231][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.823553Z|runtime|8fd36f6c-650b-4c92-be06-6f39aaf136aa][#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 1 slave calculators.
+[MFLOG|0|2022-02-19T16:47:55.825054Z|runtime|d258625c-9002-4f2e-9c71-101714d49a92][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.825611Z|runtime|c478a605-9230-41f8-8632-f3bf770f49a5][#1] INFO:NumericIntegration -- RooRealIntegral::init(lumiConstraint_Int[Lumi,nominalLumi]) using numeric integrator RooIntegrator1D to calculate Int(nominalLumi)
+[MFLOG|0|2022-02-19T16:47:55.826124Z|runtime|3071f304-28c7-4424-ae9e-ddf913f2206c][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_weight_var1Constraint_Int[alpha_mc1_weight_var1,nom_alpha_mc1_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.827133Z|runtime|8bf3c865-2212-4fc6-9e31-de5c4f8304ff][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_shape_convConstraint_Int[alpha_mc1_shape_conv,nom_alpha_mc1_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.828406Z|runtime|a9a4cf36-766a-4d5b-b0c8-2f57b3e1c848][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_weight_var1Constraint_Int[alpha_mc2_weight_var1,nom_alpha_mc2_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.830265Z|runtime|7128b37d-2e5b-4bf4-bb9c-500fc7ab4e5e][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_shape_convConstraint_Int[alpha_mc2_shape_conv,nom_alpha_mc2_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:55.830790Z|runtime|aa72f6f1-104e-49fe-97c7-b7a2b74f3526][#1] INFO:Minization -- RooProfileLL::evaluate(nll_simPdf_obsData_with_constr_Profile[SigXsecOverSM]) Creating instance of MINUIT
+[MFLOG|0|2022-02-19T16:47:55.831299Z|runtime|2ba66226-7cc8-47b3-8e8e-776b44fd8d46][#1] INFO:Fitting -- RooAddition::defaultErrorLevel(nll_simPdf_obsData_with_constr) Summation contains a RooNLLVar, using its error level
+[MFLOG|0|2022-02-19T16:47:55.831741Z|runtime|85698ebf-c249-45d8-b19b-a350356415df][#1] INFO:Minization -- RooProfileLL::evaluate(nll_simPdf_obsData_with_constr_Profile[SigXsecOverSM]) determining minimum likelihood for current configurations w.r.t all observable
+[MFLOG|0|2022-02-19T16:47:55.832827Z|runtime|8c864644-3f81-4da3-8b0a-6213d59a532f]RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state channel1 (50 dataset entries)
+[MFLOG|0|2022-02-19T16:47:55.833389Z|runtime|f1fd7206-d2ce-4497-9fdf-a02d425a13d0][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.835206Z|runtime|b2474f8b-849b-4ee0-8ec2-a53d01694d80][#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 1 slave calculators.
+[MFLOG|0|2022-02-19T16:47:55.835735Z|runtime|97ce4a2a-7393-446d-8aa9-3ffda8321e9d][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:55.836210Z|runtime|a4136710-2073-4a72-811e-ee800f3e0f2c][#1] INFO:NumericIntegration -- RooRealIntegral::init(lumiConstraint_Int[Lumi,nominalLumi]) using numeric integrator RooIntegrator1D to calculate Int(nominalLumi)
+[MFLOG|0|2022-02-19T16:47:55.836659Z|runtime|4272d2d1-9d88-4e7f-9cfa-38c49ef79c18][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_weight_var1Constraint_Int[alpha_mc1_weight_var1,nom_alpha_mc1_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_weight_var1)
+[MFLOG|0|2022-02-19T16:47:55.837630Z|runtime|a0017e82-ad16-4c0d-a20c-13d12a0bdc81][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_shape_convConstraint_Int[alpha_mc1_shape_conv,nom_alpha_mc1_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_shape_conv)
+[MFLOG|0|2022-02-19T16:47:56.671163Z|runtime|634e5cd7-3c05-43f8-9ad3-a9fceaa7c628][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_weight_var1Constraint_Int[alpha_mc2_weight_var1,nom_alpha_mc2_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_weight_var1)
+[MFLOG|0|2022-02-19T16:47:56.671405Z|runtime|8be5b4c9-1b92-4cfb-819e-bfc8d402873f][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_shape_convConstraint_Int[alpha_mc2_shape_conv,nom_alpha_mc2_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:56.671570Z|runtime|13cfe085-2886-40c5-beb1-9512139e094b][#1] INFO:Minization -- RooProfileLL::evaluate(nll_simPdf_obsData_with_constr_Profile[SigXsecOverSM]) minimum found at (SigXsecOverSM=0.417866)
+[MFLOG|0|2022-02-19T16:47:56.671718Z|runtime|71189ec5-1db1-41d9-91cc-34c0fb3e380b]..........................................................................................................................................................................................................
+[MFLOG|0|2022-02-19T16:47:56.671850Z|runtime|5369bdca-3f7d-479f-b1b0-16a1e4cb78a7]RooAbsTestStatistic::initSimMode: creating slave calculator #0 for state channel1 (50 dataset entries)
+[MFLOG|0|2022-02-19T16:47:56.671963Z|runtime|eff60afb-7277-4875-9322-c4261cf97337][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:56.672067Z|runtime|8ebcbf12-041a-4a35-ad49-9e4d2032aac5][#1] INFO:Fitting -- RooAbsTestStatistic::initSimMode: created 1 slave calculators.
+[MFLOG|0|2022-02-19T16:47:56.672166Z|runtime|e00b1c9d-2dad-4346-89e6-c65e1bde7a0b][#1] INFO:NumericIntegration -- RooRealIntegral::init(channel1_model_Int[obs_x_channel1]) using numeric integrator RooBinIntegrator to calculate Int(obs_x_channel1)
+[MFLOG|0|2022-02-19T16:47:56.672267Z|runtime|1b7fce66-8dd6-41d5-831c-00d93a971f74][#1] INFO:NumericIntegration -- RooRealIntegral::init(lumiConstraint_Int[Lumi,nominalLumi]) using numeric integrator RooIntegrator1D to calculate Int(nominalLumi)
+[MFLOG|0|2022-02-19T16:47:56.672370Z|runtime|a67e7e24-8afb-4724-b3a7-d81db8dd1767][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_weight_var1Constraint_Int[alpha_mc1_weight_var1,nom_alpha_mc1_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_weight_var1)
+[MFLOG|0|2022-02-19T16:47:56.672473Z|runtime|387b93d3-8bb2-4b39-b92f-83c852e7f8bc][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc1_shape_convConstraint_Int[alpha_mc1_shape_conv,nom_alpha_mc1_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc1_shape_conv)
+[MFLOG|0|2022-02-19T16:47:56.672575Z|runtime|1e370e3b-7baa-48df-aea4-fd8806296bea][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_weight_var1Constraint_Int[alpha_mc2_weight_var1,nom_alpha_mc2_weight_var1]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_weight_var1)
+[MFLOG|0|2022-02-19T16:47:56.672677Z|runtime|a75c0170-4ac3-4bd6-be62-f02b836c40d7][#1] INFO:NumericIntegration -- RooRealIntegral::init(alpha_mc2_shape_convConstraint_Int[alpha_mc2_shape_conv,nom_alpha_mc2_shape_conv]) using numeric integrator RooIntegrator1D to calculate Int(nom_alpha_mc2_shape_conv)
+[MFLOG|0|2022-02-19T16:47:56.672873Z|runtime|79b48e76-7c39-48f0-b39a-bd86844b4b6f]
+[MFLOG|0|2022-02-19T16:47:56.673003Z|runtime|e9baeae6-c30f-4636-b82c-9e06d0d8287b]Return Code: 0

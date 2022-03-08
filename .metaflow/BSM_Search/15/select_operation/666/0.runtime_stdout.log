@@ -1,0 +1,11 @@
+[MFLOG|0|2022-02-19T17:41:12.934426Z|runtime|33709a4f-0220-4ddc-a5d2-a384777cc641]The command is: 
+[MFLOG|0|2022-02-19T17:41:17.663617Z|runtime|079ab297-b090-4f87-8f5e-a23daf34be7d] 
+[MFLOG|0|2022-02-19T17:41:17.666190Z|runtime|c9013d28-b6df-47b8-85ea-ec1ae0123824]        
+[MFLOG|0|2022-02-19T17:41:17.667186Z|runtime|55c3a194-e1b7-4e6d-a464-aa7558eb94c5]            source /home/abd/root/root/bin/thisroot.sh        
+[MFLOG|0|2022-02-19T17:41:17.668053Z|runtime|0e51b00e-028b-46e9-a284-6e080db8c7d7]            python /home/abd/Desktop/Work/Metaflow/BSM-Search/code/select.py /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_nominal.root signal nominal
+[MFLOG|0|2022-02-19T17:41:17.669302Z|runtime|91f53fc2-4f07-4180-b98c-cef1c089b467]        
+[MFLOG|0|2022-02-19T17:41:17.670039Z|runtime|bcfd31ac-4c7d-4a83-99d9-ebf419bbbf79]The output is: 
+[MFLOG|0|2022-02-19T17:41:17.671107Z|runtime|51513b30-4e65-499d-aeb0-598e36f72c6f] inside
+[MFLOG|0|2022-02-19T17:41:17.674430Z|runtime|d462bf89-4c75-40f7-8066-8d1928b14ae5]region:var:weight_nominal
+[MFLOG|0|2022-02-19T17:41:17.679046Z|runtime|1976f66a-889a-4679-806a-ce5a0f4add9a]
+[MFLOG|0|2022-02-19T17:41:17.679875Z|runtime|ed6c5250-3193-46ac-848f-112e5a059546]Return Code: 0

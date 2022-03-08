@@ -1,0 +1,15 @@
+[MFLOG|0|2022-02-19T17:00:02.983107Z|runtime|9f3a2a57-c9e8-4141-90fe-74de0a9d6922]The command is: 
+[MFLOG|0|2022-02-19T17:00:04.053305Z|runtime|fcf75b63-7479-4e1b-89e7-1f447746ca53] 
+[MFLOG|0|2022-02-19T17:00:04.055770Z|runtime|e8c66c8e-1e4d-4b18-8ae6-dfdddf017ba3]        source /home/abd/root/root/bin/thisroot.sh        
+[MFLOG|0|2022-02-19T17:00:04.056331Z|runtime|42cbf9fb-bbee-42f5-ab71-3e2ff043ba49]        hadd -f /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc2_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_merged_hist.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/data_merged_hist.root
+[MFLOG|0|2022-02-19T17:00:04.057377Z|runtime|974f231c-1695-4c22-a745-3420248140e5]    
+[MFLOG|0|2022-02-19T17:00:04.058142Z|runtime|be8571f6-23ec-484b-897a-89b5ce23b063]The output is: 
+[MFLOG|0|2022-02-19T17:00:04.059218Z|runtime|956e1c48-48db-4998-9311-4c83b8470a37] hadd Target file: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root
+[MFLOG|0|2022-02-19T17:00:04.060021Z|runtime|363dd9b0-c131-41b7-8088-2103db54b61b]hadd compression setting for all output: 1
+[MFLOG|0|2022-02-19T17:00:04.061976Z|runtime|0dcc3f3c-c2f6-4c11-866f-f42ca8225a7a]hadd Source file 1: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_merged_hist.root
+[MFLOG|0|2022-02-19T17:00:04.064244Z|runtime|1c6d5af0-14c1-4592-adf5-ab7e6b726a76]hadd Source file 2: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc2_merged_hist.root
+[MFLOG|0|2022-02-19T17:00:04.065285Z|runtime|19763177-5cca-4d8d-8bd1-55cc87a3725f]hadd Source file 3: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_merged_hist.root
+[MFLOG|0|2022-02-19T17:00:04.066529Z|runtime|fc5d780f-34d8-4575-a4e9-1890a16be376]hadd Source file 4: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/data_merged_hist.root
+[MFLOG|0|2022-02-19T17:00:04.068754Z|runtime|3c23ac97-7787-48e6-bd76-c47573056c07]hadd Target path: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/all_merged_hist.root:/
+[MFLOG|0|2022-02-19T17:00:04.069437Z|runtime|525eb92d-dfbf-424b-a11b-f4d58dbb7f26]
+[MFLOG|0|2022-02-19T17:00:04.070043Z|runtime|29f4a58f-6380-40de-89d5-6406ecf21497]Return Code: 0

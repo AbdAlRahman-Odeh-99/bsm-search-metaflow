@@ -1,0 +1,8 @@
+[MFLOG|0|2022-02-19T16:47:13.381666Z|runtime|562c6c58-622a-49bb-8bf2-092852fca2a8]The command is: 
+[MFLOG|0|2022-02-19T16:47:16.718028Z|runtime|72e244b8-6a94-4adf-ab12-6f46a7f29819] 
+[MFLOG|0|2022-02-19T16:47:16.718331Z|runtime|45c0591a-553f-47b5-9772-912ef3c6d27e]        source /home/abd/root/root/bin/thisroot.sh        
+[MFLOG|0|2022-02-19T16:47:16.718491Z|runtime|a89a0a67-a90e-4c87-8cb0-ac5bbdf10a85]        python /home/abd/Desktop/Work/Metaflow/BSM-Search/code/histogram.py /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_nominal.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/sig_nominal_hist.root signal 0.0025 nominal
+[MFLOG|0|2022-02-19T16:47:16.718950Z|runtime|f5d4a436-6b25-4a54-b2b2-e214a6be126b]    
+[MFLOG|0|2022-02-19T16:47:16.719395Z|runtime|8915a67b-4cfb-43c7-80a6-5d6fd96d87f2]The output is: 
+[MFLOG|0|2022-02-19T16:47:16.719848Z|runtime|53e5938f-0ded-4d64-bb2c-16fd2ed48a81] 
+[MFLOG|0|2022-02-19T16:47:16.720390Z|runtime|e03b5664-79be-425e-bc6d-e56fd476e141]Return Code: 0

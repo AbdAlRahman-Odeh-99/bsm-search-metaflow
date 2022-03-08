@@ -1,0 +1,16 @@
+[MFLOG|0|2022-02-19T16:52:24.604873Z|runtime|76bc25e6-d8b8-4103-b7ad-3fda0a5cfe27]The command is: 
+[MFLOG|0|2022-02-19T16:52:26.931026Z|runtime|b743f764-d4ee-411d-9ee5-4cf6056a47e8] 
+[MFLOG|0|2022-02-19T16:52:26.934849Z|runtime|08904295-da46-4549-ba54-6ee3242bea4b]
+[MFLOG|0|2022-02-19T16:52:26.935830Z|runtime|3dd01bde-78da-4e05-8932-e41476424373]        source /home/abd/root/root/bin/thisroot.sh
+[MFLOG|0|2022-02-19T16:52:26.936478Z|runtime|225b3b53-f16a-4045-a12e-319503eef413]        hadd -f /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1.root  /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_1.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_2.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_3.root /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_4.root
+[MFLOG|0|2022-02-19T16:52:26.937260Z|runtime|2588ad6f-c2ea-4fe6-af19-43c5152711c7]        
+[MFLOG|0|2022-02-19T16:52:26.938652Z|runtime|fe1f253e-3953-4e92-bf99-e8dd14919f94]The output is: 
+[MFLOG|0|2022-02-19T16:52:26.939303Z|runtime|76e82697-e2c6-49c0-8f70-195ac56b2ef9] hadd Target file: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1.root
+[MFLOG|0|2022-02-19T16:52:26.940174Z|runtime|91d45dcc-ba4d-4bf1-b2c1-a5a2e3b03ac8]hadd compression setting for all output: 1
+[MFLOG|0|2022-02-19T16:52:26.941990Z|runtime|6e928548-d396-498c-bb26-221a27e9d460]hadd Source file 1: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_1.root
+[MFLOG|0|2022-02-19T16:52:26.943275Z|runtime|fe99981e-5992-4a82-b184-1925d418c8b6]hadd Source file 2: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_2.root
+[MFLOG|0|2022-02-19T16:52:26.944482Z|runtime|63d9cbd6-134a-4117-aa8d-7e8148db0aef]hadd Source file 3: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_3.root
+[MFLOG|0|2022-02-19T16:52:26.945576Z|runtime|ac627f8b-98b1-4488-ada1-7fa5c56eef8b]hadd Source file 4: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1_4.root
+[MFLOG|0|2022-02-19T16:52:26.946351Z|runtime|d6126066-b7c4-4e9c-98ff-f8e070934d39]hadd Target path: /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search/mc1.root:/
+[MFLOG|0|2022-02-19T16:52:26.948000Z|runtime|e444ced3-4ccb-4e4d-b56c-bae10dd29b18]
+[MFLOG|0|2022-02-19T16:52:26.948483Z|runtime|9d6dafb2-2801-4473-bcb3-4bbdd05da01a]Return Code: 0

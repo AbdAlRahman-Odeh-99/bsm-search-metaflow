@@ -62,15 +62,6 @@ hist_weight_data_options = \
     }
 #----------------------------------- DATA CONFIGURATIONS END ----------------------------------- 
 
-makews_outputs = [
-    base_dir + "/xmldir",
-    base_dir + "/results_results.table",
-    base_dir + "/results_meas.root",
-    base_dir + "/results_combined_meas_model.root",
-    base_dir + "/results_combined_meas_profileLR.eps",
-    base_dir + "/results_channel1_meas_profileLR.eps",
-    base_dir + "/results_channel1_meas_model.root"
-]
 
 plot_outputs = [
     base_dir + "/nominal_vals.yml",
@@ -213,24 +204,8 @@ def hist_weight_GenerateCommand(data):
 #----------------------------------- Hist Weight Operation End -----------------------------------
 
 #----------------------------------- Merge Explicit Operation Start -----------------------------------
-def merge_explicit_data_genertion(option, operation = None):
-    data_type = option['data_type']
-    input_files = ''
-    output_file = data_type+'_merged_hist.root'
-
-    if('mc' in data_type):
-        if('merge_hist_shape' in operation):
-            input_files = base_dir + '/' + data_type + '_shape_conv_up_hist.root ' + \
-                          base_dir + '/' + data_type +'_shape_conv_dn_hist.root'
-            output_file = data_type+'_shape_hist.root'
-        elif('merge_hist_all' in operation):
-            input_files = base_dir + '/' + data_type + '_nominal_hist.root ' + \
-                          base_dir + '/' + data_type + '_shape_hist.root'
-    elif('sig' in data_type):
-        input_files = base_dir + '/' + data_type + '_nominal_hist.root'
-    elif('data' in data_type):
-        input_files = base_dir + '/' + data_type + '_hist.root '+ base_dir+'/qcd_hist.root'
-    elif('all' in data_type):
+def merge_explicit_data_genertion(option = None, operation = None):
+    if (option == None and operation == None) :
         input_files = base_dir + '/' + 'mc1_merged_hist.root ' + \
                       base_dir + '/' + 'mc2_merged_hist.root ' + \
                       base_dir + '/' + 'sig_merged_hist.root ' + \
@@ -241,11 +216,28 @@ def merge_explicit_data_genertion(option, operation = None):
         'input_files': input_files,
         'output_file': base_dir + "/" + output_file,
         }
+    else:
+        data_type = option['data_type']
+        input_files = ''
+        output_file = data_type+'_merged_hist.root'
 
-    return{
-        'input_files': input_files,
-        'output_file': base_dir + "/" + output_file,
-    }
+        if('mc' in data_type):
+            if('merge_hist_shape' in operation):
+                input_files = base_dir + '/' + data_type + '_shape_conv_up_hist.root ' + \
+                            base_dir + '/' + data_type +'_shape_conv_dn_hist.root'
+                output_file = data_type+'_shape_hist.root'
+            elif('merge_hist_all' in operation):
+                input_files = base_dir + '/' + data_type + '_nominal_hist.root ' + \
+                            base_dir + '/' + data_type + '_shape_hist.root'
+        elif('sig' in data_type):
+            input_files = base_dir + '/' + data_type + '_nominal_hist.root'
+        elif('data' in data_type):
+            input_files = base_dir + '/' + data_type + '_hist.root '+ base_dir+'/qcd_hist.root'
+            
+        return{
+            'input_files': input_files,
+            'output_file': base_dir + "/" + output_file,
+        }
 
 def merge_explicit_GenerateCommand(data):
     return f"""
@@ -281,7 +273,6 @@ def plot_data_generation(combined_model, nominal_vals, fit_results, prefit_plot,
 
 def plot_GenerateCommand(data):
     return f"""
-        set -x
         source {thisroot_dir}/thisroot.sh
         hfquickplot write-vardef {data['combined_model']} combined {data['nominal_vals']}
         hfquickplot plot-channel {data['combined_model']} combined channel1 x {data['nominal_vals']} -c qcd,mc2,mc1,signal -o {data['prefit_plot']}
@@ -328,7 +319,7 @@ class BSM_Search(FlowSpec):
         for i in range (1,self.option['njobs']+1):
             self.jobs.append(str(i))
         self.next(self.generate_operation, foreach="jobs")
-    
+
     @card
     @step
     def generate_operation(self):
@@ -432,39 +423,45 @@ class BSM_Search(FlowSpec):
         data = merge_explicit_data_genertion(self.option, 'merge_hist_all')
         bashCommand = merge_explicit_GenerateCommand(data)
         run_bash(bashCommand)
-        self.next(self.join_scatter)
-
-    '''
-    @card
-    @step
-    def join_hist_shape(self,inputs):
-        self.merge_artifacts(inputs, include=['variations'])
-        option = self.option
-        if('mc' in option['data_type']):
-            variations = self.variations
-            data = merge_explicit_data_genertion(self.option, 'merge_hist_shape', variations)
-            bashCommand = merge_explicit_GenerateCommand(data)
-            run_bash(bashCommand)
-        self.next(self.join_hists)
+        self.next(self.final_join)
 
     @card
     @step
-    def join_hists(self):
-        option = self.option
-        variations = self.hist_option['variations']
-        data = merge_explicit_data_genertion(self.option, 'merge_hist_all', variations)
+    def final_join(self, inputs):
+        self.next(self.merge_hists)
+
+    @card
+    @step
+    def merge_hists(self):
+        data = merge_explicit_data_genertion()
         bashCommand = merge_explicit_GenerateCommand(data)
         run_bash(bashCommand)
-        self.next(self.join_select)
-    '''
-
-    
+        self.next(self.makews)
 
     @card
     @step
-    def join_scatter(self,inputs):
-        self.next(self.end)
+    def makews(self):
+        data_bkg_hists = base_dir + "/all_merged_hist.root"
+        workspace_prefix = base_dir + "/results"
+        xml_dir = base_dir + "/xmldir"
+        data = makews_data_generation(data_bkg_hists, workspace_prefix, xml_dir)
+        bashCommand = makews_GenerateCommand(data)
+        run_bash(bashCommand)
+        self.next(self.plot)
 
+    @card
+    @step
+    def plot(self):
+        combined_model = base_dir + '/results_combined_meas_model.root'
+        nominal_vals = base_dir + "/nominal_vals.yml"
+        fit_results = base_dir + "/fit_results.yml"
+        prefit_plot = base_dir + "/prefit.pdf"
+        postfit_plot = base_dir + "/postfit.pdf"
+        data = plot_data_generation(combined_model, nominal_vals, fit_results, prefit_plot, postfit_plot)
+        bashCommand = plot_GenerateCommand(data)
+        run_bash(bashCommand)
+        self.next(self.end)
+        
     @card
     @step
     def end(self):

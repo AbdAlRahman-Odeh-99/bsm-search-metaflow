@@ -1,0 +1,8 @@
+[MFLOG|0|2022-02-19T16:27:08.934877Z|runtime|26a7937b-319e-4b66-845a-a1e78bd2bb38]The command is: 
+[MFLOG|0|2022-02-19T16:27:09.628847Z|runtime|34d4d70f-092b-42e3-a546-b7036d9268e8] 
+[MFLOG|0|2022-02-19T16:27:09.629006Z|runtime|dc2cc4f8-3347-40f6-8af3-3e2f7c792187]        rm -rf /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search
+[MFLOG|0|2022-02-19T16:27:09.629095Z|runtime|67d45638-68a5-446b-91ed-64b9afa44124]        mkdir -p /home/abd/Desktop/Work/Metaflow/BSM-Search/data/bsm-search
+[MFLOG|0|2022-02-19T16:27:09.629202Z|runtime|39391415-1df8-42f3-9492-b5634d09b79e]        
+[MFLOG|0|2022-02-19T16:27:09.629319Z|runtime|1b514832-18d7-48db-89f3-814a18b5cdb2]The output is: 
+[MFLOG|0|2022-02-19T16:27:09.629428Z|runtime|d9e3f273-11aa-474d-84a4-397a20e78c47] 
+[MFLOG|0|2022-02-19T16:27:09.629539Z|runtime|69d8fbbd-0fc8-4ece-a1fb-f67d9ced4f77]Return Code: 0
